@@ -27,7 +27,8 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "NotelyCompose"
+rootProject.name = "Bostaurus"
 include(":shared")
 include(":lib")
 include(":core:audio")
+include(":nativeLogger")

@@ -20,7 +20,7 @@
         tools:ignore="SelectedPhotoAccess"/>
 
     <application
-        android:name="com.module.notelycompose.NoteApp"
+        android:name="com.module.notelycompose.MainApplication"
         android:allowBackup="false"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"

@@ -36,6 +36,10 @@ kotlinxSerializationJson = "1.9.0"
 napier = "2.7.1"
 sqldelight = "1.5.5"
 kotlinx-coroutines = "1.10.2"
+junitVersion = "4.13.2"
+junit = "1.1.5"
+espressoCoreVersion = "3.5.1"
+materialVersion = "1.13.0"
 
 
 [libraries]
@@ -87,6 +91,10 @@ sqldelight-gradle-plugin = { group = "com.squareup.sqldelight", name = "gradle-p
 
 # Splash Screen
 core-splashscreen = { group = "androidx.core", name = "core-splashscreen", version.ref = "splashscreen" }
+junit = { group = "junit", name = "junit", version.ref = "junitVersion" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junit" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCoreVersion" }
+material = { group = "com.google.android.material", name = "material", version.ref = "materialVersion" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
@@ -96,3 +104,4 @@ composeCompiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "k
 composeMultiplatform = { id = "org.jetbrains.compose", version.ref = "composeMultiplatform" }
 kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
 kotlinxSerialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }

@@ -29,7 +29,7 @@ private val DarkColorPalette = darkColors(
 )
 
 @Composable
-fun MyApplicationTheme(
+fun BostaurusTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
     content: @Composable () -> Unit
 ) {

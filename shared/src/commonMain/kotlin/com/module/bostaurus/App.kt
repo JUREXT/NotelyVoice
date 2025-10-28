@@ -33,7 +33,7 @@ import com.module.notelycompose.notes.ui.settings.NoteDetailTextSizeScreen
 import com.module.notelycompose.notes.ui.settings.SettingsScreen
 import com.module.notelycompose.notes.ui.settings.SettingsTextSizeScreen
 import com.module.notelycompose.notes.ui.theme.LocalCustomColors
-import com.module.notelycompose.notes.ui.theme.MyApplicationTheme
+import com.module.notelycompose.notes.ui.theme.BostaurusTheme
 import com.module.notelycompose.onboarding.data.PreferencesRepository
 import com.module.notelycompose.onboarding.presentation.OnboardingViewModel
 import com.module.notelycompose.onboarding.presentation.model.OnboardingState
@@ -58,7 +58,7 @@ fun App(
     preferencesRepository: PreferencesRepository = koinInject()
 ) {
     val uiMode by preferencesRepository.getTheme().collectAsState(Theme.SYSTEM.name)
-    MyApplicationTheme(
+    BostaurusTheme(
         darkTheme = when (uiMode) {
             Theme.DARK.name -> true
             Theme.LIGHT.name -> false

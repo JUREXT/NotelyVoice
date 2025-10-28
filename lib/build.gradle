@@ -24,10 +24,7 @@ android {
 
                 // When set, builds whisper.android against the version located
                 // at GGML_HOME instead of the copy bundled with whisper.cpp.
-                if (
-                        project.hasProperty('GGML_HOME') &&
-                                project.findProperty('GGML_CLBLAST') == 'ON'
-                ) {
+                if (project.hasProperty('GGML_HOME') && project.findProperty('GGML_CLBLAST') == 'ON') {
                     // Turning on CLBlast requires GGML_HOME
                     arguments "-DGGML_HOME=${project.property('GGML_HOME')}",
                             "-DGGML_CLBLAST=ON",

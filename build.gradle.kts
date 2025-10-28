@@ -6,6 +6,7 @@ plugins {
     alias(libs.plugins.kotlinMultiplatform) apply false
     alias(libs.plugins.kotlinxSerialization) apply false
     alias(libs.plugins.app.icon) apply false
+    alias(libs.plugins.kotlin.android) apply false
 }
 buildscript {
     repositories {

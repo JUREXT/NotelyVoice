@@ -7,6 +7,6 @@ class Greeting {
     private val platform: Platform = getPlatform()
 
     fun greet(): String {
-        return "Hello, ${"Lorem Ipsum"}!"
+        return "Hello, Lorem Ipsum, ${platform.name}!"
     }
 }

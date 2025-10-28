@@ -7,12 +7,12 @@ import io.github.aakira.napier.Napier
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
 
-class NoteApp : Application(){
+class MainApplication : Application(){
     override fun onCreate() {
         super.onCreate()
         Napier.base(DebugAntilog())
         initKoinApplication {
-            androidContext(this@NoteApp)
+            androidContext(this@MainApplication)
             androidLogger()
         }
     }
