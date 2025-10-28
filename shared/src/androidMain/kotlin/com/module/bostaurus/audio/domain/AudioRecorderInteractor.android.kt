@@ -1,12 +1,12 @@
-package com.module.notelycompose.audio.domain
+package com.module.bostaurus.audio.domain
 
 import android.content.Context
 import audio.recorder.AudioRecorder
-import com.module.notelycompose.audio.presentation.mappers.AudioRecorderPresentationToUiMapper
-import com.module.notelycompose.audio.ui.recorder.AudioRecorderUiState
-import com.module.notelycompose.core.debugPrintln
-import com.module.notelycompose.extensions.startRecordingService
-import com.module.notelycompose.service.AudioRecordingService
+import com.module.bostaurus.audio.presentation.mappers.AudioRecorderPresentationToUiMapper
+import com.module.bostaurus.audio.ui.recorder.AudioRecorderUiState
+import com.module.bostaurus.core.debugPrintln
+import com.module.bostaurus.extensions.startRecordingService
+import com.module.bostaurus.service.AudioRecordingService
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job

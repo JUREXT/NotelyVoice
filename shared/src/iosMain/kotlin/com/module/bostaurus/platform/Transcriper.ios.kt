@@ -1,8 +1,8 @@
-package com.module.notelycompose.platform
+package com.module.bostaurus.platform
 
-import com.module.notelycompose.core.debugPrintln
-import com.module.notelycompose.whisper.WhisperCallback
-import com.module.notelycompose.whisper.WhisperContext
+import com.module.bostaurus.core.debugPrintln
+import com.module.bostaurus.whisper.WhisperCallback
+import com.module.bostaurus.whisper.WhisperContext
 import kotlinx.cinterop.ByteVar
 import kotlinx.cinterop.ExperimentalForeignApi
 import kotlinx.cinterop.get
@@ -15,8 +15,6 @@ import platform.Foundation.NSUserDomainMask
 import platform.Foundation.dataWithContentsOfURL
 import kotlin.math.max
 import kotlin.math.min
-
-
 
 actual class Transcriber{
     private var canTranscribe: Boolean = false

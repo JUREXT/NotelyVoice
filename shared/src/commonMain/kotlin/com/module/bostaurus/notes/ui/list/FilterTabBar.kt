@@ -1,4 +1,4 @@
-package com.module.notelycompose.notes.ui.list
+package com.module.bostaurus.notes.ui.list
 
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -6,11 +6,11 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import com.module.notelycompose.resources.vectors.IcFile
-import com.module.notelycompose.resources.vectors.IcFolder
-import com.module.notelycompose.resources.vectors.IcStar
-import com.module.notelycompose.resources.vectors.IcRecorderSmall
-import com.module.notelycompose.resources.vectors.Images
+import com.module.bostaurus.resources.vectors.IcFile
+import com.module.bostaurus.resources.vectors.IcFolder
+import com.module.bostaurus.resources.vectors.IcStar
+import com.module.bostaurus.resources.vectors.IcRecorderSmall
+import com.module.bostaurus.resources.vectors.Images
 import com.module.notelycompose.resources.Res
 import com.module.notelycompose.resources.date_tab_bar_all
 import com.module.notelycompose.resources.date_tab_bar_starred

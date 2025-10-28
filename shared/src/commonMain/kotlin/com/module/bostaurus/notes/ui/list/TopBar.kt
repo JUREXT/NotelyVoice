@@ -1,4 +1,4 @@
-package com.module.notelycompose.notes.ui.list
+package com.module.bostaurus.notes.ui.list
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
@@ -22,7 +22,7 @@ import androidx.compose.ui.platform.LocalFocusManager
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.module.notelycompose.notes.ui.theme.LocalCustomColors
+import com.module.bostaurus.notes.ui.theme.LocalCustomColors
 import com.module.notelycompose.resources.Res
 import com.module.notelycompose.resources.top_bar_notes
 import org.jetbrains.compose.resources.stringResource

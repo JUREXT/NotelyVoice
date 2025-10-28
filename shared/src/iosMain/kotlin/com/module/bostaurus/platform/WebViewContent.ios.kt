@@ -1,4 +1,4 @@
-package com.module.notelycompose.platform
+package com.module.bostaurus.platform
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember
@@ -9,6 +9,7 @@ import platform.Foundation.NSURL
 import platform.WebKit.WKWebView
 import platform.WebKit.WKWebViewConfiguration
 import platform.CoreGraphics.CGRectMake
+import platform.Foundation.NSURLRequest
 
 @OptIn(ExperimentalForeignApi::class)
 @Composable
@@ -25,7 +26,7 @@ actual fun WebViewContent(url: String) {
                 // Load the URL
                 val nsUrl = NSURL(string = url)
                 if (nsUrl != null) {
-                    loadRequest(platform.Foundation.NSURLRequest(uRL = nsUrl))
+                    loadRequest(NSURLRequest(uRL = nsUrl))
                 }
             }
         },
@@ -33,7 +34,7 @@ actual fun WebViewContent(url: String) {
             // Update logic when the URL changes
             val nsUrl = NSURL(string = url)
             if (nsUrl != null) {
-                (webView as WKWebView).loadRequest(platform.Foundation.NSURLRequest(uRL = nsUrl))
+                (webView as WKWebView).loadRequest(NSURLRequest(uRL = nsUrl))
             }
         }
     )

@@ -1,8 +1,8 @@
-package com.module.notelycompose.notes.presentation.mapper
+package com.module.bostaurus.notes.presentation.mapper
 
-import com.module.notelycompose.notes.domain.model.NoteDomainModel
-import com.module.notelycompose.notes.presentation.list.model.NotePresentationModel
-import com.module.notelycompose.notes.ui.list.model.NoteUiModel
+import com.module.bostaurus.notes.domain.model.NoteDomainModel
+import com.module.bostaurus.notes.presentation.list.model.NotePresentationModel
+import com.module.bostaurus.notes.ui.list.model.NoteUiModel
 import kotlinx.datetime.LocalDateTime
 
 private const val TIME_STRING = "at"

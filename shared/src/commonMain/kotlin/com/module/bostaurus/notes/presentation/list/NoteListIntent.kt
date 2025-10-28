@@ -1,6 +1,6 @@
-package com.module.notelycompose.notes.presentation.list
+package com.module.bostaurus.notes.presentation.list
 
-import com.module.notelycompose.notes.ui.list.model.NoteUiModel
+import com.module.bostaurus.notes.ui.list.model.NoteUiModel
 
 sealed class NoteListIntent {
     data class OnNoteDeleted(val note: NoteUiModel) : NoteListIntent()

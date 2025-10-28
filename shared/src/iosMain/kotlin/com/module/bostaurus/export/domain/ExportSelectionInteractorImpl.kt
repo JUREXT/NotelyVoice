@@ -1,4 +1,4 @@
-package com.module.notelycompose.export.domain
+package com.module.bostaurus.export.domain
 
 import kotlinx.cinterop.*
 import kotlinx.coroutines.Dispatchers
@@ -10,7 +10,9 @@ import platform.UIKit.*
 import platform.darwin.NSObject
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.DelicateCoroutinesApi
+import kotlinx.coroutines.MainScope
 import kotlinx.coroutines.suspendCancellableCoroutine
+import platform.UniformTypeIdentifiers.UTTypeFolder
 import kotlin.coroutines.resume
 
 private const val TEXT_BLANK_DEFAULT = "no-title"
@@ -64,7 +66,7 @@ class ExportSelectionInteractorImpl : ExportSelectionInteractor {
 
         val documentPicker = UIDocumentPickerViewController(
             forOpeningContentTypes = listOf(
-                platform.UniformTypeIdentifiers.UTTypeFolder
+                UTTypeFolder
             )
         )
 
@@ -164,7 +166,7 @@ class ExportSelectionInteractorImpl : ExportSelectionInteractor {
                     // Update progress
                     completedItems++
                     val progress = completedItems.toFloat() / totalItems.toFloat()
-                    kotlinx.coroutines.MainScope().launch {
+                    MainScope().launch {
                         onProgress(progress)
                     }
                 }
@@ -206,7 +208,7 @@ class ExportSelectionInteractorImpl : ExportSelectionInteractor {
 
                         completedItems++
                         val progress = completedItems.toFloat() / totalItems.toFloat()
-                        kotlinx.coroutines.MainScope().launch {
+                        MainScope().launch {
                             onProgress(progress)
                         }
                     }

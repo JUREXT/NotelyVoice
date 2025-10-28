@@ -1,6 +1,6 @@
-package com.module.notelycompose.export.presentation.model
+package com.module.bostaurus.export.presentation.model
 
-import com.module.notelycompose.notes.presentation.list.model.NotePresentationModel
+import com.module.bostaurus.notes.presentation.list.model.NotePresentationModel
 
 data class ExportSelectionPresentationState(
     val noteIds: List<Long> = emptyList(),

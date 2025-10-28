@@ -1,4 +1,4 @@
-package com.module.notelycompose.audio.ui
+package com.module.bostaurus.core
 
 fun Int.formatTimeToHHMMSS(): String {
     val totalSeconds = this / 1000
@@ -12,5 +12,4 @@ fun Int.formatTimeToHHMMSS(): String {
     }
 }
 
-fun String.keepFirstCharCaseExt(): String =
-    if (isEmpty()) "" else first() + substring(1).lowercase()
+

@@ -1,5 +1,4 @@
-package com.module.notelycompose.notes.domain
-
+package com.module.bostaurus.notes.domain
 
 class DeleteNoteById(
     private val noteDataSource: NoteDataSource

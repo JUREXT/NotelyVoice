@@ -1,6 +1,6 @@
-package com.module.notelycompose.whisper
+package com.module.bostaurus.whisper
 
-import com.module.notelycompose.core.debugPrintln
+import com.module.bostaurus.core.debugPrintln
 import kotlinx.cinterop.ExperimentalForeignApi
 import platform.Foundation.NSDocumentDirectory
 import platform.Foundation.NSError

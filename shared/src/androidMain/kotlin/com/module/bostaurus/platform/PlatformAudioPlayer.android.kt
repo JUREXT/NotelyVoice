@@ -1,12 +1,14 @@
-package com.module.notelycompose.platform
+package com.module.bostaurus.platform
+
+import android.media.MediaPlayer
 
 actual class PlatformAudioPlayer {
-    private var mediaPlayer: android.media.MediaPlayer? = null
+    private var mediaPlayer: MediaPlayer? = null
 
     actual suspend fun prepare(filePath: String): Int {
         mediaPlayer?.release()
         try {
-            val player = android.media.MediaPlayer().apply {
+            val player = MediaPlayer().apply {
                 setDataSource(filePath)
                 prepare()
             }

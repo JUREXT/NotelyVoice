@@ -1,11 +1,11 @@
-package com.module.notelycompose.notes.ui.detail
+package com.module.bostaurus.notes.ui.detail
 
 import androidx.compose.ui.text.input.TextFieldValue
 import androidx.compose.ui.text.style.TextAlign
-import com.module.notelycompose.notes.extension.TEXT_SIZE_BODY
-import com.module.notelycompose.notes.extension.TEXT_SIZE_HEADING
-import com.module.notelycompose.notes.extension.TEXT_SIZE_SUBHEADING
-import com.module.notelycompose.notes.extension.TEXT_SIZE_TITLE
+import com.module.bostaurus.notes.extension.TEXT_SIZE_BODY
+import com.module.bostaurus.notes.extension.TEXT_SIZE_HEADING
+import com.module.bostaurus.notes.extension.TEXT_SIZE_SUBHEADING
+import com.module.bostaurus.notes.extension.TEXT_SIZE_TITLE
 
 data class EditorUiState(
     val content: TextFieldValue = TextFieldValue(""),

@@ -1,4 +1,4 @@
-package com.module.notelycompose.platform
+package com.module.bostaurus.platform
 
 import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.PreferenceDataStoreFactory

@@ -1,4 +1,4 @@
-package com.module.notelycompose.core
+package com.module.bostaurus.core
 
 import androidx.annotation.MainThread
 import androidx.compose.animation.AnimatedContentScope

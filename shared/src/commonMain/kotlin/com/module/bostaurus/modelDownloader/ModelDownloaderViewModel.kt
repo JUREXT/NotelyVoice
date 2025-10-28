@@ -1,27 +1,28 @@
-package com.module.notelycompose.modelDownloader
+package com.module.bostaurus.modelDownloader
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.module.notelycompose.onboarding.data.PreferencesRepository
-import com.module.notelycompose.platform.Downloader
-import com.module.notelycompose.platform.Transcriber
+import com.module.bostaurus.platform.Downloader
+import com.module.bostaurus.platform.Transcriber
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.IO
 import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.SharedFlow
 import kotlinx.coroutines.flow.StateFlow
-import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
-
 
 class ModelDownloaderViewModel(
     private val downloader: Downloader,
     private val transcriber: Transcriber,
     private val modelSelection: ModelSelection
 ):ViewModel(){
-    private var _uiState: MutableStateFlow<DownloaderUiState> = MutableStateFlow(DownloaderUiState(modelSelection.getDefaultTranscriptionModel()))
+    private var _uiState: MutableStateFlow<DownloaderUiState> = MutableStateFlow(
+        DownloaderUiState(
+            modelSelection.getDefaultTranscriptionModel()
+        )
+    )
 
     init {
         viewModelScope.launch(Dispatchers.IO) {

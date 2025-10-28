@@ -1,9 +1,9 @@
-package com.module.notelycompose.notes.domain.mapper
+package com.module.bostaurus.notes.domain.mapper
 
-import com.module.notelycompose.notes.data.model.NoteDataModel
-import com.module.notelycompose.notes.data.model.TextAlignDataModel
-import com.module.notelycompose.notes.domain.model.NoteDomainModel
-import com.module.notelycompose.notes.domain.model.TextAlignDomainModel
+import com.module.bostaurus.notes.data.model.NoteDataModel
+import com.module.bostaurus.notes.data.model.TextAlignDataModel
+import com.module.bostaurus.notes.domain.model.NoteDomainModel
+import com.module.bostaurus.notes.domain.model.TextAlignDomainModel
 
 class NoteDomainMapper(
     private val textFormatMapper: TextFormatMapper

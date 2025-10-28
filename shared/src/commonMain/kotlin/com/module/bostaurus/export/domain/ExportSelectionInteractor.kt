@@ -1,4 +1,4 @@
-package com.module.notelycompose.export.domain
+package com.module.bostaurus.export.domain
 
 interface ExportSelectionInteractor {
     fun exportAllSelection(

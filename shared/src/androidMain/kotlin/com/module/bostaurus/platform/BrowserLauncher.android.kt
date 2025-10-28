@@ -1,4 +1,4 @@
-package com.module.notelycompose.platform
+package com.module.bostaurus.platform
 
 import android.content.Context
 import android.content.Intent

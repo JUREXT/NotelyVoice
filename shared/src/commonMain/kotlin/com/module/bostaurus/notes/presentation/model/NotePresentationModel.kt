@@ -1,7 +1,7 @@
-package com.module.notelycompose.notes.presentation.model
+package com.module.bostaurus.notes.presentation.model
 
-import com.module.notelycompose.notes.domain.model.TextAlignDomainModel
-import com.module.notelycompose.notes.domain.model.TextFormatDomainModel
+import com.module.bostaurus.notes.domain.model.TextAlignDomainModel
+import com.module.bostaurus.notes.domain.model.TextFormatDomainModel
 import kotlinx.datetime.LocalDateTime
 
 data class NotePresentationModel(

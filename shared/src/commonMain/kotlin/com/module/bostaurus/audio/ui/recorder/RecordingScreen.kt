@@ -1,4 +1,4 @@
-package com.module.notelycompose.audio.ui.recorder
+package com.module.bostaurus.audio.ui.recorder
 
 import androidx.compose.animation.core.Animatable
 import androidx.compose.animation.core.FastOutSlowInEasing
@@ -57,12 +57,12 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import com.module.notelycompose.audio.presentation.AudioRecorderViewModel
-import com.module.notelycompose.core.debugPrintln
-import com.module.notelycompose.notes.presentation.detail.TextEditorViewModel
-import com.module.notelycompose.notes.ui.theme.LocalCustomColors
-import com.module.notelycompose.platform.HandlePlatformBackNavigation
-import com.module.notelycompose.platform.getPlatform
+import com.module.bostaurus.audio.presentation.AudioRecorderViewModel
+import com.module.bostaurus.core.debugPrintln
+import com.module.bostaurus.notes.presentation.detail.TextEditorViewModel
+import com.module.bostaurus.notes.ui.theme.LocalCustomColors
+import com.module.bostaurus.platform.HandlePlatformBackNavigation
+import com.module.bostaurus.platform.getPlatform
 import com.module.notelycompose.resources.Res
 import com.module.notelycompose.resources.recording_ui_checkmark
 import com.module.notelycompose.resources.recording_ui_microphone
@@ -70,10 +70,10 @@ import com.module.notelycompose.resources.recording_ui_tap_start_record
 import com.module.notelycompose.resources.recording_ui_tap_stop_record
 import com.module.notelycompose.resources.top_bar_back
 import com.module.notelycompose.resources.transcription_icon
-import com.module.notelycompose.resources.vectors.IcChevronLeft
-import com.module.notelycompose.resources.vectors.IcPause
-import com.module.notelycompose.resources.vectors.IcRecorder
-import com.module.notelycompose.resources.vectors.Images
+import com.module.bostaurus.resources.vectors.IcChevronLeft
+import com.module.bostaurus.resources.vectors.IcPause
+import com.module.bostaurus.resources.vectors.IcRecorder
+import com.module.bostaurus.resources.vectors.Images
 import kotlinx.coroutines.delay
 import org.jetbrains.compose.resources.stringResource
 import org.koin.compose.viewmodel.koinViewModel
@@ -173,7 +173,7 @@ private fun RecordingInitialScreen(
                     .clickable { onTapToRecord() },
                 contentAlignment = Alignment.Center
             ) {
-                androidx.compose.material3.Icon(
+                Icon(
                     imageVector = Images.Icons.IcRecorder,
                     contentDescription = stringResource(Res.string.recording_ui_microphone),
                     tint = LocalCustomColors.current.bodyBackgroundColor,

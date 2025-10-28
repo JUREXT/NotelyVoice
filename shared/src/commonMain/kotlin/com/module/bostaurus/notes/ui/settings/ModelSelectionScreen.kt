@@ -1,4 +1,4 @@
-package com.module.notelycompose.notes.ui.settings
+package com.module.bostaurus.notes.ui.settings
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
@@ -7,20 +7,17 @@ import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.module.notelycompose.modelDownloader.NO_MODEL_SELECTION
-import com.module.notelycompose.notes.ui.detail.AndroidNoteTopBar
-import com.module.notelycompose.notes.ui.detail.IOSNoteTopBar
-import com.module.notelycompose.notes.ui.theme.LocalCustomColors
-import com.module.notelycompose.onboarding.data.PreferencesRepository
-import com.module.notelycompose.platform.getPlatform
+import com.module.bostaurus.modelDownloader.NO_MODEL_SELECTION
+import com.module.bostaurus.notes.ui.detail.AndroidNoteTopBar
+import com.module.bostaurus.notes.ui.detail.IOSNoteTopBar
+import com.module.bostaurus.notes.ui.theme.LocalCustomColors
+import com.module.bostaurus.onboarding.data.PreferencesRepository
+import com.module.bostaurus.platform.getPlatform
 import com.module.notelycompose.resources.Res
 import com.module.notelycompose.resources.ic_question_mark
-import com.module.notelycompose.resources.optimized_model_description
 import com.module.notelycompose.resources.optimized_model_setting_desc
 import com.module.notelycompose.resources.optimized_model_setting_size
 import com.module.notelycompose.resources.optimized_model_title
@@ -31,7 +28,6 @@ import com.module.notelycompose.resources.settings_model_selection_text
 import com.module.notelycompose.resources.standard_model_setting_desc
 import com.module.notelycompose.resources.standard_model_setting_size
 import com.module.notelycompose.resources.standard_model_title
-import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.launch
 import org.jetbrains.compose.resources.painterResource
@@ -138,7 +134,7 @@ fun ModelSelectionScreen(
             modelOptions.forEachIndexed { index, model ->
                 ModelOptionCard(
                     model = model,
-                    isSelected = if(modelSavedSelection != NO_MODEL_SELECTION) {
+                    isSelected = if (modelSavedSelection != NO_MODEL_SELECTION) {
                         modelSavedSelection == index
                     } else {
                         selectedModel == index

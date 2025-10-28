@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.module.notelycompose.summary
+package com.module.bostaurus.summary
 
-import com.module.notelycompose.core.debugPrintln
+import com.module.bostaurus.core.debugPrintln
 import kotlin.jvm.JvmStatic
 
 // The Text2Summary API for Android.
@@ -30,14 +30,14 @@ class Text2Summary {
             text: String,
             compressionRate: Float,
         ): String {
-            val sentences = Tokenizer.textToSentences(Tokenizer.removeLineBreaks(text))
+            val sentences = Tokenizer.Companion.textToSentences(Tokenizer.Companion.removeLineBreaks(text))
             debugPrintln{"Sentences : ${sentences.size}"}
             val tfidfSummarizer = TFIDFSummarizer()
             val summarySentenceIndices = tfidfSummarizer.compute(text, compressionRate)
             return buildString(sentences, summarySentenceIndices).trim()
         }
 
-        // Fetchs the sentences from topNValues and concatenates them to produce a complete. String.
+        // Fetches the sentences from topNValues and concatenates them to produce a complete. String.
         private fun buildString(
             sentences: Array<String>,
             topNValues: Array<Int>,

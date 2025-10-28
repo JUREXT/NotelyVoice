@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.module.notelycompose.summary
+package com.module.bostaurus.summary
 
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -24,6 +24,7 @@ import kotlinx.coroutines.sync.Mutex
 import kotlinx.coroutines.sync.withLock
 import kotlin.collections.ArrayList
 import kotlin.collections.HashMap
+import kotlin.collections.iterator
 import kotlin.math.floor
 import kotlin.math.log10
 
@@ -38,13 +39,13 @@ class TFIDFSummarizer {
         rate: Float,
     ): Array<Int> {
         // Check whether the rate lies in the given range.
-        if (!Tokenizer.checkRate(rate)) {
+        if (!Tokenizer.Companion.checkRate(rate)) {
             throw Exception("The compression rate must lie in the interval ( 0 , 1 ).")
         }
 
         // Get sentences from the text.
-        val sentences = Tokenizer.textToSentences(Tokenizer.removeLineBreaks(text))
-        val sentenceTokens = sentences.map { Tokenizer.sentenceToTokens(it) }
+        val sentences = Tokenizer.Companion.textToSentences(Tokenizer.Companion.removeLineBreaks(text))
+        val sentenceTokens = sentences.map { Tokenizer.Companion.sentenceToTokens(it) }
         val tokensList = ArrayList<String>()
 
         // Collect all the words present in the text.
@@ -53,7 +54,7 @@ class TFIDFSummarizer {
         }
 
         // Create a ( word , frequency ) vocab.
-        val vocab = Tokenizer.buildVocab(tokensList.toTypedArray())
+        val vocab = Tokenizer.Companion.buildVocab(tokensList.toTypedArray())
         val tfidfSumList = ArrayList<Pair<Int, Float>>()
         val tfidfSumListMutex = Mutex()
 
@@ -77,7 +78,7 @@ class TFIDFSummarizer {
         // Get the indices of top N maximum values from `weightedFreqSums`.
         val n = floor((sentences.size * rate).toDouble()).toInt()
         val topNIndices =
-            Tokenizer.getTopNIndices(
+            Tokenizer.Companion.getTopNIndices(
                 sentenceTFIDFScores,
                 sentenceTFIDFScores.apply {
                     sort()

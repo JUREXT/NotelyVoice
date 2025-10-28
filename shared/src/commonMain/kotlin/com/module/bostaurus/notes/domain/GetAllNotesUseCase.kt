@@ -1,15 +1,10 @@
-package com.module.notelycompose.notes.domain
+package com.module.bostaurus.notes.domain
 
-import com.module.notelycompose.core.CommonFlow
-import com.module.notelycompose.core.asFlow
-import com.module.notelycompose.core.toCommonFlow
-import com.module.notelycompose.notes.domain.mapper.NoteDomainMapper
-import com.module.notelycompose.notes.domain.model.NoteDomainModel
-import com.module.notelycompose.notes.domain.model.NotesFilterDomainModel
-import com.module.notelycompose.notes.domain.model.NotesFilterDomainModel.ALL
-import com.module.notelycompose.notes.domain.model.NotesFilterDomainModel.STARRED
-import com.module.notelycompose.notes.domain.model.NotesFilterDomainModel.VOICES
-import com.module.notelycompose.notes.domain.model.NotesFilterDomainModel.RECENT
+import com.module.bostaurus.core.CommonFlow
+import com.module.bostaurus.core.asFlow
+import com.module.bostaurus.core.toCommonFlow
+import com.module.bostaurus.notes.domain.mapper.NoteDomainMapper
+import com.module.bostaurus.notes.domain.model.NoteDomainModel
 import kotlinx.coroutines.flow.map
 
 class GetAllNotesUseCase(

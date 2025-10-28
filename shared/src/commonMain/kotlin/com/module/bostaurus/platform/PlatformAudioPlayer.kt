@@ -1,4 +1,4 @@
-package com.module.notelycompose.platform
+package com.module.bostaurus.platform
 
 expect class PlatformAudioPlayer() {
     suspend fun prepare(filePath: String): Int

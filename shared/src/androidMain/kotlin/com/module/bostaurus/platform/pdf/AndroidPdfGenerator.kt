@@ -1,6 +1,7 @@
-package com.module.notelycompose.platform.pdf
+package com.module.bostaurus.platform.pdf
 
 import android.content.Context
+import android.graphics.Color
 import android.graphics.pdf.PdfDocument
 import android.graphics.Typeface
 import android.text.Layout
@@ -48,7 +49,7 @@ class AndroidPdfGenerator(private val context: Context) {
 
     private fun createTextPaint(size: Float): TextPaint {
         return TextPaint().apply {
-            color = android.graphics.Color.BLACK
+            color = Color.BLACK
             textSize = size
             typeface = Typeface.DEFAULT
             isAntiAlias = true

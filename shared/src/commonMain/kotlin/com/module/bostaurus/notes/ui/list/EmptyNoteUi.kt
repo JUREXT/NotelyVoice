@@ -1,4 +1,4 @@
-package com.module.notelycompose.notes.ui.list
+package com.module.bostaurus.notes.ui.list
 
 import androidx.compose.foundation.layout.*
 import androidx.compose.material3.*
@@ -10,7 +10,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.module.notelycompose.notes.ui.theme.LocalCustomColors
+import com.module.bostaurus.notes.ui.theme.LocalCustomColors
 import com.module.notelycompose.resources.Res
 import com.module.notelycompose.resources.ic_empty_notes
 import org.jetbrains.compose.resources.painterResource

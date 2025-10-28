@@ -1,7 +1,7 @@
-package com.module.notelycompose.notes.presentation.mapper
+package com.module.bostaurus.notes.presentation.mapper
 
-import com.module.notelycompose.notes.domain.model.TextFormatDomainModel
-import com.module.notelycompose.notes.presentation.detail.model.TextPresentationFormat
+import com.module.bostaurus.notes.domain.model.TextFormatDomainModel
+import com.module.bostaurus.notes.presentation.detail.model.TextPresentationFormat
 
 class TextFormatPresentationMapper {
     fun mapToDomainModel(presentationFormat: TextPresentationFormat): TextFormatDomainModel {

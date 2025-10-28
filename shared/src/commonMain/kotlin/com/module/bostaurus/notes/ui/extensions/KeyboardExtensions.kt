@@ -1,4 +1,4 @@
-package com.module.notelycompose.notes.ui.extensions
+package com.module.bostaurus.notes.ui.extensions
 
 import androidx.compose.ui.focus.FocusRequester
 import androidx.compose.ui.platform.SoftwareKeyboardController

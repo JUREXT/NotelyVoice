@@ -1,9 +1,9 @@
-package com.module.notelycompose.audio.presentation
+package com.module.bostaurus.audio.presentation
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import audio.FileManager
-import com.module.notelycompose.audio.ui.importing.ImportingAudioState
+import com.module.bostaurus.audio.ui.importing.ImportingAudioState
 import io.github.aakira.napier.Napier
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow

@@ -1,4 +1,4 @@
-package com.module.notelycompose.notes.data.model
+package com.module.bostaurus.notes.data.model
 
 sealed class TextAlignDataModel {
     data object Left : TextAlignDataModel()

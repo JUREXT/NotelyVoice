@@ -1,17 +1,13 @@
-package com.module.notelycompose.export.presentation
+package com.module.bostaurus.export.presentation
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import audio.utils.deleteFile
-import com.module.notelycompose.audio.ui.importing.ImportingAudioState
-import com.module.notelycompose.export.domain.ExportSelectionInteractor
-import com.module.notelycompose.export.domain.NoFolderSelectedException
-import com.module.notelycompose.export.presentation.model.ExportSelectionPresentationState
-import com.module.notelycompose.export.presentation.model.ExportingFileState
-import com.module.notelycompose.notes.domain.GetAllNotesUseCase
-import com.module.notelycompose.notes.presentation.list.NoteListPresentationState
-import com.module.notelycompose.notes.presentation.mapper.NotePresentationMapper
-import kotlinx.coroutines.Delay
+import com.module.bostaurus.export.domain.ExportSelectionInteractor
+import com.module.bostaurus.export.domain.NoFolderSelectedException
+import com.module.bostaurus.export.presentation.model.ExportSelectionPresentationState
+import com.module.bostaurus.export.presentation.model.ExportingFileState
+import com.module.bostaurus.notes.domain.GetAllNotesUseCase
+import com.module.bostaurus.notes.presentation.mapper.NotePresentationMapper
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow

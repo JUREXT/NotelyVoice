@@ -1,4 +1,4 @@
-package com.module.notelycompose.notes.ui.settings
+package com.module.bostaurus.notes.ui.settings
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
@@ -11,7 +11,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.module.notelycompose.notes.ui.theme.LocalCustomColors
+import com.module.bostaurus.notes.ui.theme.LocalCustomColors
 import com.module.notelycompose.resources.Res
 import com.module.notelycompose.resources.close
 import com.module.notelycompose.resources.settings_light_theme

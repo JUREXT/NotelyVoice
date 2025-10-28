@@ -1,4 +1,4 @@
-package com.module.notelycompose.notes.data.model
+package com.module.bostaurus.notes.data.model
 
 import kotlinx.datetime.Clock
 import kotlinx.datetime.LocalDateTime

@@ -1,9 +1,9 @@
-package com.module.notelycompose.notes.presentation.detail.model
+package com.module.bostaurus.notes.presentation.detail.model
 
 import androidx.compose.ui.text.input.TextFieldValue
 import androidx.compose.ui.text.style.TextAlign
-import com.module.notelycompose.notes.extension.TEXT_SIZE_BODY
-import com.module.notelycompose.notes.presentation.helpers.formattedDate
+import com.module.bostaurus.notes.extension.TEXT_SIZE_BODY
+import com.module.bostaurus.notes.presentation.helpers.formattedDate
 import kotlinx.datetime.Clock
 import kotlinx.datetime.TimeZone
 import kotlinx.datetime.toLocalDateTime

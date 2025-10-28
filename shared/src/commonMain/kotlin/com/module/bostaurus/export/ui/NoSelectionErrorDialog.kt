@@ -1,13 +1,15 @@
-package com.module.notelycompose.export.ui
+package com.module.bostaurus.export.ui
 
 import androidx.compose.foundation.layout.padding
+import androidx.compose.material.ButtonDefaults
+import androidx.compose.material.TextButton
 import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.RectangleShape
 import androidx.compose.ui.unit.dp
-import com.module.notelycompose.notes.ui.theme.LocalCustomColors
+import com.module.bostaurus.notes.ui.theme.LocalCustomColors
 import com.module.notelycompose.resources.Res
 import com.module.notelycompose.resources.batch_export_no_selection_made
 import com.module.notelycompose.resources.cancel
@@ -35,9 +37,9 @@ fun NoSelectionErrorDialog(
                 )
             },
             confirmButton = {
-                androidx.compose.material.TextButton(
+                TextButton(
                     onClick = onDismiss,
-                    colors = androidx.compose.material.ButtonDefaults.buttonColors(
+                    colors = ButtonDefaults.buttonColors(
                         backgroundColor = LocalCustomColors.current.shareDialogBackgroundColor,
                         contentColor = LocalCustomColors.current.bodyContentColor
                     ),

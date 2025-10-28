@@ -1,4 +1,4 @@
-package com.module.notelycompose.notes.extension
+package com.module.bostaurus.notes.extension
 
 const val TEXT_SIZE_TITLE = 24f
 const val TEXT_SIZE_HEADING = 20f

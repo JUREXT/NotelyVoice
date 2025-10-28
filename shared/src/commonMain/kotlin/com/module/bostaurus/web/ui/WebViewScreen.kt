@@ -1,12 +1,12 @@
-package com.module.notelycompose.web.ui
+package com.module.bostaurus.web.ui
 
-import com.module.notelycompose.platform.WebViewContent
+import com.module.bostaurus.platform.WebViewContent
 import androidx.compose.foundation.layout.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
-import com.module.notelycompose.platform.getPlatform
-import com.module.notelycompose.notes.ui.detail.AndroidNoteTopBar
-import com.module.notelycompose.notes.ui.detail.IOSNoteTopBar
+import com.module.bostaurus.platform.getPlatform
+import com.module.bostaurus.notes.ui.detail.AndroidNoteTopBar
+import com.module.bostaurus.notes.ui.detail.IOSNoteTopBar
 
 @Composable
 fun WebViewScreen(

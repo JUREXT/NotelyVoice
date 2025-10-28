@@ -1,6 +1,9 @@
-package com.module.notelycompose.platform
+package com.module.bostaurus.platform
 
 import android.annotation.SuppressLint
+import android.view.View
+import android.webkit.WebView
+import android.webkit.WebViewClient
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.foundation.rememberScrollState
@@ -22,14 +25,14 @@ actual fun WebViewContent(url: String) {
                 .fillMaxSize()
                 .verticalScroll(rememberScrollState()),
             factory = { context ->
-                android.webkit.WebView(context).apply {
+                WebView(context).apply {
                     settings.javaScriptEnabled = true
                     settings.loadWithOverviewMode = true
                     settings.useWideViewPort = true
                     settings.setSupportZoom(true)
                     isVerticalScrollBarEnabled = true
-                    overScrollMode = android.view.View.OVER_SCROLL_ALWAYS
-                    webViewClient = android.webkit.WebViewClient()
+                    overScrollMode = View.OVER_SCROLL_ALWAYS
+                    webViewClient = WebViewClient()
                     loadUrl(url)
                 }
             },

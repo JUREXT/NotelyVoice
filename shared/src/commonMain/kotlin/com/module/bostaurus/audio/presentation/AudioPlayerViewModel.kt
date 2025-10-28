@@ -1,10 +1,10 @@
-package com.module.notelycompose.audio.presentation
+package com.module.bostaurus.audio.presentation
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.module.notelycompose.audio.presentation.mappers.AudioPlayerPresentationToUiMapper
-import com.module.notelycompose.audio.ui.player.model.AudioPlayerUiState
-import com.module.notelycompose.platform.PlatformAudioPlayer
+import com.module.bostaurus.audio.presentation.mappers.AudioPlayerPresentationToUiMapper
+import com.module.bostaurus.audio.ui.player.model.AudioPlayerUiState
+import com.module.bostaurus.platform.PlatformAudioPlayer
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.cancel

@@ -1,4 +1,4 @@
-package com.module.notelycompose.export.presentation.model
+package com.module.bostaurus.export.presentation.model
 
 sealed interface ExportingFileState {
     object Idle : ExportingFileState

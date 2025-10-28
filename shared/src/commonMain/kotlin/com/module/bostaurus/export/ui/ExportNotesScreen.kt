@@ -1,4 +1,4 @@
-package com.module.notelycompose.export.ui
+package com.module.bostaurus.export.ui
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
@@ -12,6 +12,8 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.layout.windowInsetsPadding
+import androidx.compose.material.MaterialTheme
+import androidx.compose.material.Text
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material3.Icon
@@ -23,13 +25,13 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import com.module.notelycompose.export.presentation.ExportSelectionViewModel
-import com.module.notelycompose.notes.ui.theme.LocalCustomColors
-import com.module.notelycompose.platform.getPlatform
+import com.module.bostaurus.export.presentation.ExportSelectionViewModel
+import com.module.bostaurus.notes.ui.theme.LocalCustomColors
+import com.module.bostaurus.platform.getPlatform
 import com.module.notelycompose.resources.Res
 import com.module.notelycompose.resources.top_bar_back
-import com.module.notelycompose.resources.vectors.IcChevronLeft
-import com.module.notelycompose.resources.vectors.Images
+import com.module.bostaurus.resources.vectors.IcChevronLeft
+import com.module.bostaurus.resources.vectors.Images
 import org.jetbrains.compose.resources.stringResource
 
 @Composable
@@ -102,9 +104,9 @@ private fun ComponentBackButton(
                 tint = LocalCustomColors.current.bodyContentColor
             )
             Spacer(modifier = Modifier.width(8.dp))
-            androidx.compose.material.Text(
+            Text(
                 text = stringResource(Res.string.top_bar_back),
-                style = androidx.compose.material.MaterialTheme.typography.body1,
+                style = MaterialTheme.typography.body1,
                 color = LocalCustomColors.current.bodyContentColor
             )
         }

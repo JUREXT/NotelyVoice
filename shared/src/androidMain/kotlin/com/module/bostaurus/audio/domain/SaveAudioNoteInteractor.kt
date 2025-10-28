@@ -1,11 +1,11 @@
-package com.module.notelycompose.audio.domain
+package com.module.bostaurus.audio.domain
 
 import androidx.compose.ui.text.style.TextAlign
 import audio.recorder.AudioRecorder
-import com.module.notelycompose.notes.domain.GetNoteById
-import com.module.notelycompose.notes.domain.InsertNoteUseCase
-import com.module.notelycompose.notes.domain.UpdateNoteUseCase
-import com.module.notelycompose.notes.presentation.mapper.TextAlignPresentationMapper
+import com.module.bostaurus.notes.domain.GetNoteById
+import com.module.bostaurus.notes.domain.InsertNoteUseCase
+import com.module.bostaurus.notes.domain.UpdateNoteUseCase
+import com.module.bostaurus.notes.presentation.mapper.TextAlignPresentationMapper
 
 internal interface SaveAudioNoteInteractor {
     suspend fun save(

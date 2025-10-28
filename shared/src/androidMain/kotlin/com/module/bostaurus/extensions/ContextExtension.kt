@@ -1,13 +1,13 @@
-package com.module.notelycompose.extensions
+package com.module.bostaurus.extensions
 
 import android.app.PendingIntent
 import android.content.Context
 import android.content.Intent
 import android.os.Build
 import android.service.quicksettings.TileService
-import com.module.notelycompose.Arguments.NOTE_ID_PARAM
-import com.module.notelycompose.MainActivity
-import com.module.notelycompose.service.AudioRecordingService
+import com.module.bostaurus.Arguments.NOTE_ID_PARAM
+import com.module.bostaurus.MainActivity
+import com.module.bostaurus.service.AudioRecordingService
 
 internal fun Context.startRecordingService(recordingAction: String, noteId: Long? = null) {
     val intent = Intent(this, AudioRecordingService::class.java).apply {
@@ -21,7 +21,7 @@ internal fun Context.startRecordingService(recordingAction: String, noteId: Long
 
 internal fun Context.restartMainActivity() {
     val intent = Intent(this, MainActivity::class.java).apply {
-        flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+        flags =  Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
     }
 
     try {

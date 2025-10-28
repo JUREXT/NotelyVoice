@@ -1,4 +1,4 @@
-package com.module.notelycompose.notes.ui.share
+package com.module.bostaurus.notes.ui.share
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -17,7 +17,7 @@ import com.module.notelycompose.resources.share_options
 import com.module.notelycompose.resources.share_text
 import com.module.notelycompose.resources.share_audio_recording
 import com.module.notelycompose.resources.close
-import com.module.notelycompose.notes.ui.theme.LocalCustomColors
+import com.module.bostaurus.notes.ui.theme.LocalCustomColors
 import org.jetbrains.compose.resources.stringResource
 
 @Composable

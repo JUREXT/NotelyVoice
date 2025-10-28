@@ -1,4 +1,4 @@
-package com.module.notelycompose.platform.expect
+package com.module.bostaurus.platform.expect
 
 import android.app.Activity
 import android.view.WindowManager

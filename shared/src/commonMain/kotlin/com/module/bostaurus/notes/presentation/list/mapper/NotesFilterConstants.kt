@@ -1,4 +1,4 @@
-package com.module.notelycompose.notes.presentation.list.mapper
+package com.module.bostaurus.notes.presentation.list.mapper
 
 object NotesFilterConstants {
     const val ALL = 0

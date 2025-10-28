@@ -1,4 +1,4 @@
-package com.module.notelycompose.notes.presentation.helpers
+package com.module.bostaurus.notes.presentation.helpers
 
 import kotlinx.datetime.LocalDateTime
 

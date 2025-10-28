@@ -1,4 +1,4 @@
-package com.module.notelycompose.notes.ui.list.model
+package com.module.bostaurus.notes.ui.list.model
 
 data class NoteUiModel(
     val id: Long,

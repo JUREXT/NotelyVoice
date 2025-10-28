@@ -1,5 +1,6 @@
-package com.module.notelycompose.notes.ui.settings
+package com.module.bostaurus.notes.ui.settings
 
+import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
@@ -39,13 +40,13 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.module.notelycompose.modelDownloader.NO_MODEL_SELECTION
-import com.module.notelycompose.modelDownloader.OPTIMIZED_MODEL_SELECTION
-import com.module.notelycompose.notes.extension.TEXT_SIZE_BODY
-import com.module.notelycompose.notes.extension.intBodyFontSizes
-import com.module.notelycompose.notes.ui.theme.LocalCustomColors
-import com.module.notelycompose.onboarding.data.PreferencesRepository
-import com.module.notelycompose.platform.Theme
+import com.module.bostaurus.modelDownloader.NO_MODEL_SELECTION
+import com.module.bostaurus.modelDownloader.OPTIMIZED_MODEL_SELECTION
+import com.module.bostaurus.notes.extension.TEXT_SIZE_BODY
+import com.module.bostaurus.notes.extension.intBodyFontSizes
+import com.module.bostaurus.notes.ui.theme.LocalCustomColors
+import com.module.bostaurus.onboarding.data.PreferencesRepository
+import com.module.bostaurus.platform.Theme
 import kotlinx.coroutines.launch
 import org.koin.compose.koinInject
 import org.jetbrains.compose.resources.stringResource
@@ -62,7 +63,6 @@ import com.module.notelycompose.resources.theme
 import com.module.notelycompose.resources.choose_how_the_app_looks
 import com.module.notelycompose.resources.close
 import com.module.notelycompose.resources.accessibility
-import com.module.notelycompose.resources.batch_export_settings_how_to
 import com.module.notelycompose.resources.batch_export_settings_how_to_1
 import com.module.notelycompose.resources.batch_export_settings_how_to_2
 import com.module.notelycompose.resources.batch_export_settings_how_to_3
@@ -843,7 +843,7 @@ fun SettingsModelOptionCard(
         colors = CardDefaults.cardColors(
             LocalCustomColors.current.modelSelectionBgColor
         ),
-        border = androidx.compose.foundation.BorderStroke(1.dp, LocalCustomColors.current.bodyContentColor)
+        border = BorderStroke(1.dp, LocalCustomColors.current.bodyContentColor)
     ) {
         Row(
             modifier = Modifier

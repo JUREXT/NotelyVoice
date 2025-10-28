@@ -1,4 +1,4 @@
-package com.module.notelycompose.export.ui
+package com.module.bostaurus.export.ui
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
@@ -21,9 +21,9 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.module.notelycompose.audio.ui.recorder.RecordingSuccessScreen
-import com.module.notelycompose.export.presentation.model.ExportingFileState
-import com.module.notelycompose.notes.ui.theme.LocalCustomColors
+import com.module.bostaurus.audio.ui.recorder.RecordingSuccessScreen
+import com.module.bostaurus.export.presentation.model.ExportingFileState
+import com.module.bostaurus.notes.ui.theme.LocalCustomColors
 import com.module.notelycompose.resources.Res
 import com.module.notelycompose.resources.batch_export_settings_error_occurred
 import com.module.notelycompose.resources.batch_export_settings_no_folder_selected

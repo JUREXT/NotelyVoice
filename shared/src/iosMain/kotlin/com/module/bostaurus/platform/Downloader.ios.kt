@@ -1,6 +1,6 @@
-package com.module.notelycompose.platform
+package com.module.bostaurus.platform
 
-import com.module.notelycompose.whisper.DownloadDelegate
+import com.module.bostaurus.whisper.DownloadDelegate
 import platform.Foundation.NSURL
 import platform.Foundation.NSURLSession
 import platform.Foundation.NSURLSessionConfiguration

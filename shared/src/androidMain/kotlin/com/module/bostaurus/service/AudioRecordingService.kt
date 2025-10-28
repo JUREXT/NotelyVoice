@@ -1,5 +1,6 @@
-package com.module.notelycompose.service
+package com.module.bostaurus.service
 
+import android.R
 import android.app.Notification
 import android.app.NotificationChannel
 import android.app.NotificationManager
@@ -8,9 +9,9 @@ import android.content.Intent
 import android.os.IBinder
 import androidx.core.app.NotificationCompat
 import audio.recorder.AudioRecorder
-import com.module.notelycompose.Arguments.NOTE_ID_PARAM
-import com.module.notelycompose.audio.domain.SaveAudioNoteInteractor
-import com.module.notelycompose.extensions.restartMainActivity
+import com.module.bostaurus.Arguments.NOTE_ID_PARAM
+import com.module.bostaurus.audio.domain.SaveAudioNoteInteractor
+import com.module.bostaurus.extensions.restartMainActivity
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -91,7 +92,7 @@ class AudioRecordingService : Service() {
         return NotificationCompat.Builder(this, "recording_channel")
             .setContentTitle("Recording Note")
             .setContentText("Tap to stop recording")
-            .setSmallIcon(android.R.drawable.presence_audio_online)
+            .setSmallIcon(R.drawable.presence_audio_online)
             .build()
     }
 

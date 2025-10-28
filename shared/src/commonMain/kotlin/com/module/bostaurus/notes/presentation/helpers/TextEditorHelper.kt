@@ -1,12 +1,12 @@
-package com.module.notelycompose.notes.presentation.helpers
+package com.module.bostaurus.notes.presentation.helpers
 
 import androidx.compose.ui.text.TextRange
 import androidx.compose.ui.text.input.TextFieldValue
-import com.module.notelycompose.notes.presentation.detail.model.EditorPresentationState
-import com.module.notelycompose.notes.presentation.detail.model.TextFormatPresentationOption
-import com.module.notelycompose.notes.presentation.detail.model.TextPresentationFormat
-import com.module.notelycompose.notes.presentation.detail.model.TextPresentationFormats
-import com.module.notelycompose.notes.presentation.helpers.TextFormatHelper.updateFormats
+import com.module.bostaurus.notes.presentation.detail.model.EditorPresentationState
+import com.module.bostaurus.notes.presentation.detail.model.TextFormatPresentationOption
+import com.module.bostaurus.notes.presentation.detail.model.TextPresentationFormat
+import com.module.bostaurus.notes.presentation.detail.model.TextPresentationFormats
+import com.module.bostaurus.notes.presentation.helpers.TextFormatHelper.updateFormats
 
 class TextEditorHelper {
 

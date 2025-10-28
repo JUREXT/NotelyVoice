@@ -1,4 +1,4 @@
-package com.module.notelycompose.audio.ui.player
+package com.module.bostaurus.audio.ui.player
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.interaction.MutableInteractionSource
@@ -21,7 +21,6 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
-import androidx.compose.runtime.mutableFloatStateOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
@@ -33,14 +32,13 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.DpSize
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.module.notelycompose.audio.ui.formatTimeToHHMMSS
-import com.module.notelycompose.audio.ui.player.model.AudioPlayerUiState
-import com.module.notelycompose.audio.ui.uicomponents.Thumb
-import com.module.notelycompose.audio.ui.uicomponents.Track
-import com.module.notelycompose.notes.ui.theme.LocalCustomColors
-import com.module.notelycompose.resources.style.LayoutGuide
-import com.module.notelycompose.resources.vectors.IcPause
-import com.module.notelycompose.resources.vectors.Images
+import com.module.bostaurus.core.formatTimeToHHMMSS
+import com.module.bostaurus.audio.ui.player.model.AudioPlayerUiState
+import com.module.bostaurus.audio.ui.uicomponents.Thumb
+import com.module.bostaurus.audio.ui.uicomponents.Track
+import com.module.bostaurus.notes.ui.theme.LocalCustomColors
+import com.module.bostaurus.resources.vectors.IcPause
+import com.module.bostaurus.resources.vectors.Images
 import com.module.notelycompose.resources.Res
 import com.module.notelycompose.resources.player_ui_initial_time
 import com.module.notelycompose.resources.player_ui_pause

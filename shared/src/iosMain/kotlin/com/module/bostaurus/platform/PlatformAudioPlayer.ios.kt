@@ -1,6 +1,6 @@
-package com.module.notelycompose.platform
+package com.module.bostaurus.platform
 
-import com.module.notelycompose.core.debugPrintln
+import com.module.bostaurus.core.debugPrintln
 import platform.AVFAudio.AVAudioPlayer
 import platform.Foundation.NSError
 import platform.Foundation.NSFileManager

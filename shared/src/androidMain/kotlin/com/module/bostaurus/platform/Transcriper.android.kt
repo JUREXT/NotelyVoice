@@ -1,4 +1,4 @@
-package com.module.notelycompose.platform
+package com.module.bostaurus.platform
 
 import android.Manifest
 import android.content.Context
@@ -6,10 +6,11 @@ import android.content.pm.PackageManager
 import android.os.Environment
 import androidx.core.content.ContextCompat
 import audio.utils.LauncherHolder
-import com.module.notelycompose.core.debugPrintln
-import com.module.notelycompose.utils.StreamingAudioChunker
-import com.module.notelycompose.utils.StreamingAudioChunk
-import com.module.notelycompose.utils.ChunkTranscriptionResult
+import com.module.bostaurus.core.debugPrintln
+import com.module.bostaurus.utils.AudioChunk
+import com.module.bostaurus.utils.StreamingAudioChunker
+import com.module.bostaurus.utils.ChunkTranscriptionResult
+import com.module.bostaurus.utils.TranscriptionSegment
 import com.whispercpp.whisper.WhisperCallback
 import com.whispercpp.whisper.WhisperContext
 import kotlinx.coroutines.suspendCancellableCoroutine
@@ -133,7 +134,7 @@ actual class Transcriber(
                 
                 debugPrintln{"Processing streaming chunk ${chunkIndex + 1}/${streamingChunks.size} (${streamingChunk.durationSeconds}s)"}
                 
-                val chunkSegments = mutableListOf<com.module.notelycompose.utils.TranscriptionSegment>()
+                val chunkSegments = mutableListOf<TranscriptionSegment>()
                 var chunkText = ""
                 
                 try {
@@ -153,9 +154,11 @@ actual class Transcriber(
                             val adjustedStartMs = startMs + chunkStartTimeMs.toLong()
                             val adjustedEndMs = endMs + chunkStartTimeMs.toLong()
                             
-                            chunkSegments.add(com.module.notelycompose.utils.TranscriptionSegment(
-                                adjustedStartMs, adjustedEndMs, text
-                            ))
+                            chunkSegments.add(
+                                TranscriptionSegment(
+                                    adjustedStartMs, adjustedEndMs, text
+                                )
+                            )
                             
                             // Call the original callback with adjusted timing
                             onNewSegment(adjustedStartMs, adjustedEndMs, text)
@@ -183,7 +186,7 @@ actual class Transcriber(
                     chunkText = result ?: ""
                     
                     // Create a temporary AudioChunk for compatibility with existing merge logic
-                    val tempAudioChunk = com.module.notelycompose.utils.AudioChunk(
+                    val tempAudioChunk = AudioChunk(
                         startSample = ((streamingChunk.startOffset - 44) / (streamingChunk.header.channels * (streamingChunk.header.bitsPerSample / 8))).toInt(),
                         endSample = ((streamingChunk.endOffset - 44) / (streamingChunk.header.channels * (streamingChunk.header.bitsPerSample / 8))).toInt(),
                         data = chunkData

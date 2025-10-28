@@ -1,11 +1,13 @@
-package com.module.notelycompose.export.domain
+package com.module.bostaurus.export.domain
 
 import android.content.Context
-import com.module.notelycompose.FolderPickerHandler
+import com.module.bostaurus.FolderPickerHandler
 import android.net.Uri
 import androidx.documentfile.provider.DocumentFile
 import kotlinx.coroutines.DelicateCoroutinesApi
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.MainScope
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import org.json.JSONArray
@@ -41,7 +43,7 @@ class ExportSelectionInteractorImpl(
                 return@pickFolder
             }
 
-            kotlinx.coroutines.GlobalScope.launch(Dispatchers.IO) {
+            GlobalScope.launch(Dispatchers.IO) {
                 val result = performTextExport(
                     folderUri,
                     texts,
@@ -99,7 +101,7 @@ class ExportSelectionInteractorImpl(
                     // Update progress
                     completedItems++
                     val progress = completedItems.toFloat() / totalItems.toFloat()
-                    kotlinx.coroutines.MainScope().launch {
+                    MainScope().launch {
                         onProgress(progress)
                     }
                 }
@@ -130,7 +132,7 @@ class ExportSelectionInteractorImpl(
                         // Update progress
                         completedItems++
                         val progress = completedItems.toFloat() / totalItems.toFloat()
-                        kotlinx.coroutines.MainScope().launch {
+                        MainScope().launch {
                             onProgress(progress)
                         }
                     }

@@ -1,4 +1,4 @@
-package com.module.notelycompose.onboarding.ui
+package com.module.bostaurus.onboarding.ui
 
 import androidx.compose.animation.animateColorAsState
 import androidx.compose.animation.core.*
@@ -21,10 +21,8 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.module.notelycompose.platform.getPlatform
-import com.module.notelycompose.notes.ui.theme.PoppingsFontFamily
-import com.module.notelycompose.platform.presentation.PlatformUiState
-import com.module.notelycompose.platform.presentation.PlatformViewModel
+import com.module.bostaurus.notes.ui.theme.PoppingsFontFamily
+import com.module.bostaurus.platform.presentation.PlatformUiState
 import kotlinx.coroutines.launch
 import com.module.notelycompose.resources.Res
 import com.module.notelycompose.resources.onboarding_ios_one

@@ -1,13 +1,13 @@
-package com.module.notelycompose.transcription
+package com.module.bostaurus.transcription
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.module.notelycompose.core.debugPrintln
-import com.module.notelycompose.modelDownloader.ModelSelection
-import com.module.notelycompose.onboarding.data.PreferencesRepository
-import com.module.notelycompose.platform.Transcriber
-import com.module.notelycompose.summary.Text2Summary
-import com.module.notelycompose.transcription.textAnalysis.getSegmenter
+import com.module.bostaurus.core.debugPrintln
+import com.module.bostaurus.modelDownloader.ModelSelection
+import com.module.bostaurus.onboarding.data.PreferencesRepository
+import com.module.bostaurus.platform.Transcriber
+import com.module.bostaurus.summary.Text2Summary
+import com.module.bostaurus.transcription.textAnalysis.getSegmenter
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.IO
 import kotlinx.coroutines.flow.MutableStateFlow

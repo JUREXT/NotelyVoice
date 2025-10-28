@@ -1,4 +1,4 @@
-package com.module.notelycompose.notes.ui.detail
+package com.module.bostaurus.notes.ui.detail
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Box
@@ -28,12 +28,10 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
-import com.module.notelycompose.notes.ui.theme.LocalCustomColors
-import com.module.notelycompose.platform.getPlatform
+import com.module.bostaurus.notes.ui.theme.LocalCustomColors
+import com.module.bostaurus.platform.getPlatform
 import com.module.notelycompose.resources.Res
-import com.module.notelycompose.resources.cancel
 import com.module.notelycompose.resources.copy
-import com.module.notelycompose.resources.ic_cancel_all
 import com.module.notelycompose.resources.ic_copy
 import com.module.notelycompose.resources.top_bar_back
 import com.module.notelycompose.resources.top_bar_export_audio_folder
@@ -42,8 +40,8 @@ import com.module.notelycompose.resources.top_bar_my_note
 import com.module.notelycompose.resources.top_bar_export_as_txt
 import com.module.notelycompose.resources.top_bar_export_as_pdf
 import com.module.notelycompose.resources.top_bar_import_video
-import com.module.notelycompose.resources.vectors.IcChevronLeft
-import com.module.notelycompose.resources.vectors.Images
+import com.module.bostaurus.resources.vectors.IcChevronLeft
+import com.module.bostaurus.resources.vectors.Images
 import org.jetbrains.compose.resources.painterResource
 import org.jetbrains.compose.resources.stringResource
 

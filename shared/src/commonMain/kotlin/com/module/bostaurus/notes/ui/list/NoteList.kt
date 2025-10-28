@@ -1,4 +1,4 @@
-package com.module.notelycompose.notes.ui.list
+package com.module.bostaurus.notes.ui.list
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.padding
@@ -12,8 +12,8 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import com.module.notelycompose.export.ui.SelectAllToExportUi
-import com.module.notelycompose.notes.ui.list.model.NoteUiModel
+import com.module.bostaurus.export.ui.SelectAllToExportUi
+import com.module.bostaurus.notes.ui.list.model.NoteUiModel
 
 @Composable
 fun NoteList(

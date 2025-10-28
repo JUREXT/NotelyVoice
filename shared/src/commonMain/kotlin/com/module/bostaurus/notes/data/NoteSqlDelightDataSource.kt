@@ -1,17 +1,16 @@
-package com.module.notelycompose.notes.data
+package com.module.bostaurus.notes.data
 
-import com.module.notelycompose.core.CommonFlow
-import com.module.notelycompose.core.DateTimeUtil
-import com.module.notelycompose.core.toCommonFlow
+import com.module.bostaurus.core.CommonFlow
+import com.module.bostaurus.core.DateTimeUtil
+import com.module.bostaurus.core.toCommonFlow
 import com.module.notelycompose.database.NoteDatabase
-import com.module.notelycompose.notes.data.model.NoteDataModel
-import com.module.notelycompose.notes.data.model.TextAlignDataModel
-import com.module.notelycompose.notes.data.model.TextFormatDataModel
-import com.module.notelycompose.notes.domain.NoteDataSource
+import com.module.bostaurus.notes.data.model.NoteDataModel
+import com.module.bostaurus.notes.data.model.TextAlignDataModel
+import com.module.bostaurus.notes.data.model.TextFormatDataModel
+import com.module.bostaurus.notes.domain.NoteDataSource
 import com.squareup.sqldelight.runtime.coroutines.asFlow
 import com.squareup.sqldelight.runtime.coroutines.mapToList
 import kotlinx.coroutines.flow.map
-import kotlinx.serialization.encodeToString
 import kotlinx.serialization.json.Json
 
 private const val STARRED = 1L

@@ -1,18 +1,16 @@
-package com.module.notelycompose.platform
+package com.module.bostaurus.platform
 
 import android.app.DownloadManager
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
 import android.content.IntentFilter
-import android.content.SharedPreferences
 import android.database.Cursor
 import android.os.Environment
 import androidx.core.content.ContextCompat
-import androidx.core.content.edit
 import androidx.core.net.toUri
-import com.module.notelycompose.core.debugPrintln
-import com.module.notelycompose.onboarding.data.PreferencesRepository
+import com.module.bostaurus.core.debugPrintln
+import com.module.bostaurus.onboarding.data.PreferencesRepository
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.cancel

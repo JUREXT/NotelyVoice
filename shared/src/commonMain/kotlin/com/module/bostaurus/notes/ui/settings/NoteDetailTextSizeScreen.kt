@@ -1,4 +1,4 @@
-package com.module.notelycompose.notes.ui.settings
+package com.module.bostaurus.notes.ui.settings
 
 import androidx.compose.foundation.background
 import androidx.compose.runtime.Composable
@@ -14,21 +14,19 @@ import androidx.compose.ui.text.input.TextFieldValue
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.module.notelycompose.notes.extension.intBodyFontSizes
-import com.module.notelycompose.notes.presentation.detail.TextEditorViewModel
-import com.module.notelycompose.notes.ui.detail.AndroidNoteTopBar
-import com.module.notelycompose.notes.ui.detail.IOSNoteTopBar
-import com.module.notelycompose.notes.ui.theme.LocalCustomColors
-import com.module.notelycompose.onboarding.data.PreferencesRepository
-import com.module.notelycompose.platform.getPlatform
+import com.module.bostaurus.notes.extension.intBodyFontSizes
+import com.module.bostaurus.notes.presentation.detail.TextEditorViewModel
+import com.module.bostaurus.notes.ui.detail.AndroidNoteTopBar
+import com.module.bostaurus.notes.ui.detail.IOSNoteTopBar
+import com.module.bostaurus.notes.ui.theme.LocalCustomColors
+import com.module.bostaurus.onboarding.data.PreferencesRepository
+import com.module.bostaurus.platform.getPlatform
 import com.module.notelycompose.resources.Res
 import com.module.notelycompose.resources.accessibility_a
 import com.module.notelycompose.resources.accessibility_default
 import com.module.notelycompose.resources.accessibility_desc
 import com.module.notelycompose.resources.accessibility_example
-import com.module.notelycompose.resources.body_text_default
 import com.module.notelycompose.resources.body_text_size
-import com.module.notelycompose.resources.recording_ui_checkmark
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.launch

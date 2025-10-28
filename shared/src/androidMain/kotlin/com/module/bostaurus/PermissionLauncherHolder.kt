@@ -1,4 +1,4 @@
-package com.module.notelycompose
+package com.module.bostaurus
 
 import android.net.Uri
 import androidx.activity.result.ActivityResultLauncher

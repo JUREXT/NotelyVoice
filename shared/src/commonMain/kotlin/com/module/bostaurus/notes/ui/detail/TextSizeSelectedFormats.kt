@@ -1,4 +1,4 @@
-package com.module.notelycompose.notes.ui.detail
+package com.module.bostaurus.notes.ui.detail
 
 fun textSizeSelectedFormats(
     formatOption: FormatOptionTextFormat,

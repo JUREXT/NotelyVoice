@@ -1,4 +1,4 @@
-package com.module.notelycompose.notes.ui.list
+package com.module.bostaurus.notes.ui.list
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.gestures.detectTapGestures
@@ -26,18 +26,15 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.platform.LocalFocusManager
 import androidx.compose.ui.unit.dp
-import com.module.notelycompose.export.presentation.ExportSelectionViewModel
-import com.module.notelycompose.export.ui.ExportSelectedItemConfirmationDialog
-import com.module.notelycompose.export.ui.NoSelectionErrorDialog
-import com.module.notelycompose.notes.presentation.list.NoteListIntent
-import com.module.notelycompose.notes.presentation.list.NoteListViewModel
-import com.module.notelycompose.notes.ui.share.ShareDialog
-import com.module.notelycompose.notes.ui.theme.LocalCustomColors
-import com.module.notelycompose.platform.presentation.PlatformUiState
+import com.module.bostaurus.export.presentation.ExportSelectionViewModel
+import com.module.bostaurus.export.ui.ExportSelectedItemConfirmationDialog
+import com.module.bostaurus.export.ui.NoSelectionErrorDialog
+import com.module.bostaurus.notes.presentation.list.NoteListIntent
+import com.module.bostaurus.notes.presentation.list.NoteListViewModel
+import com.module.bostaurus.notes.ui.theme.LocalCustomColors
+import com.module.bostaurus.platform.presentation.PlatformUiState
 import com.module.notelycompose.resources.Res
-import com.module.notelycompose.resources.cancel
 import com.module.notelycompose.resources.export
-import com.module.notelycompose.resources.ic_cancel_all
 import com.module.notelycompose.resources.note_list_add_note
 import org.jetbrains.compose.resources.stringResource
 import org.koin.compose.viewmodel.koinViewModel
@@ -65,10 +62,10 @@ fun NoteListScreen(
             topBar = {
                 TopBar(
                     onMenuClicked = {
-                       navigateToMenu()
+                        navigateToMenu()
                     },
                     onSettingsClicked = {
-                      navigateToSettings()
+                        navigateToSettings()
                     }
                 )
             },

@@ -1,6 +1,6 @@
-package com.module.notelycompose.platform
+package com.module.bostaurus.platform
 
-import com.module.notelycompose.platform.pdf.IOSPdfGenerator
+import com.module.bostaurus.platform.pdf.IOSPdfGenerator
 import platform.Foundation.NSURL
 import platform.UIKit.UIActivityViewController
 import platform.UIKit.UIApplication
@@ -11,8 +11,10 @@ import platform.Foundation.NSData
 import platform.Foundation.dataWithContentsOfURL
 import platform.UIKit.popoverPresentationController
 import kotlinx.cinterop.usePinned
+import platform.Foundation.NSTemporaryDirectory
 import platform.Foundation.dataWithBytes
 import platform.Foundation.writeToURL
+import platform.UIKit.UIPasteboard
 
 actual class PlatformUtils(
     private val iOSPdfGenerator: IOSPdfGenerator
@@ -96,7 +98,7 @@ actual class PlatformUtils(
         onResult: (Boolean, String?) -> Unit
     ) {
         try {
-            val tempDir = platform.Foundation.NSTemporaryDirectory()
+            val tempDir = NSTemporaryDirectory()
             val tempFilePath = "$tempDir$fileName"
             val tempFileUrl = NSURL.fileURLWithPath(tempFilePath)
 
@@ -147,7 +149,7 @@ actual class PlatformUtils(
         try {
             val pdfGenerator = iOSPdfGenerator
 
-            val tempDir = platform.Foundation.NSTemporaryDirectory()
+            val tempDir = NSTemporaryDirectory()
             val pdfFileName = if (fileName.endsWith(".pdf")) fileName else "$fileName.pdf"
             val tempFilePath = "$tempDir$pdfFileName"
             val tempFileUrl = NSURL.fileURLWithPath(tempFilePath)
@@ -185,7 +187,7 @@ actual class PlatformUtils(
 
     actual fun copyTextToClipboard(text: String, onResult: (Boolean, String?) -> Unit) {
         try {
-            val pasteboard = platform.UIKit.UIPasteboard.generalPasteboard
+            val pasteboard = UIPasteboard.generalPasteboard
             pasteboard.string = text
             onResult(true, "Text copied to clipboard")
         } catch (e: Exception) {

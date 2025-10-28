@@ -1,4 +1,4 @@
-package com.module.notelycompose.notes.ui.detail
+package com.module.bostaurus.notes.ui.detail
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
@@ -12,7 +12,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
-import com.module.notelycompose.modelDownloader.HINDI_MODEL
+import com.module.bostaurus.modelDownloader.HINDI_MODEL
 import org.jetbrains.compose.resources.stringResource
 import com.module.notelycompose.resources.Res
 import com.module.notelycompose.resources.download_required
@@ -21,7 +21,7 @@ import com.module.notelycompose.resources.for_accurate_transcription
 import com.module.notelycompose.resources.take_few_minutes
 import com.module.notelycompose.resources.download
 import com.module.notelycompose.resources.cancel
-import com.module.notelycompose.modelDownloader.TranscriptionModel
+import com.module.bostaurus.modelDownloader.TranscriptionModel
 import com.module.notelycompose.resources.file_size_approx
 import com.module.notelycompose.resources.file_model_english
 import com.module.notelycompose.resources.file_model_hindi

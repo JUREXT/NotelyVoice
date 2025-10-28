@@ -1,4 +1,4 @@
-package com.module.notelycompose.resources.style
+package com.module.bostaurus.resources.style
 
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp

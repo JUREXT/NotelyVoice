@@ -1,4 +1,4 @@
-package com.module.notelycompose.notes.domain.model
+package com.module.bostaurus.notes.domain.model
 
 sealed class NotesFilterDomainModel {
     object ALL : NotesFilterDomainModel()

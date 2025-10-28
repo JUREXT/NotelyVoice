@@ -1,4 +1,4 @@
-package com.module.notelycompose.platform
+package com.module.bostaurus.platform
 
 expect class Transcriber {
     fun doesModelExists(modelFileName: String ): Boolean

@@ -1,6 +1,6 @@
-package com.module.notelycompose.notes.presentation.helpers
+package com.module.bostaurus.notes.presentation.helpers
 
-import com.module.notelycompose.notes.presentation.detail.model.TextPresentationFormat
+import com.module.bostaurus.notes.presentation.detail.model.TextPresentationFormat
 
 object TextFormatHelper {
     fun List<TextPresentationFormat>.updateFormats(

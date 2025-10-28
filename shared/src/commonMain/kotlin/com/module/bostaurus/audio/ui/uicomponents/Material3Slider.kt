@@ -1,4 +1,4 @@
-package com.module.notelycompose.audio.ui.uicomponents
+package com.module.bostaurus.audio.ui.uicomponents
 
 import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.background
@@ -13,6 +13,7 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.material.ripple.rememberRipple
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Slider
 import androidx.compose.material3.SliderColors
@@ -29,6 +30,7 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.geometry.Offset
+import androidx.compose.ui.geometry.lerp
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.drawscope.DrawScope
@@ -134,7 +136,7 @@ private fun DrawScope.drawTrack(
         drawCircle(
             color = if (outsideFraction) inactiveTickColor else activeTickColor,
             center = Offset(
-                androidx.compose.ui.geometry.lerp(sliderStart, sliderEnd, tick).x,
+                lerp(sliderStart, sliderEnd, tick).x,
                 center.y
             ),
             radius = tickSize / 2f
@@ -178,7 +180,7 @@ fun Thumb(
             .size(thumbSize)
             .indication(
                 interactionSource = interactionSource,
-                indication = androidx.compose.material.ripple.rememberRipple(
+                indication = rememberRipple(
                     bounded = false,
                     radius = StateLayerSize / 2
                 )

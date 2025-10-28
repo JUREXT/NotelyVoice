@@ -1,13 +1,13 @@
-package com.module.notelycompose.notes.presentation.mapper
+package com.module.bostaurus.notes.presentation.mapper
 
-import com.module.notelycompose.notes.presentation.detail.model.EditorPresentationState
-import com.module.notelycompose.notes.presentation.detail.model.RecordingPathPresentationModel
-import com.module.notelycompose.notes.presentation.detail.model.TextFormatPresentationOption
-import com.module.notelycompose.notes.presentation.detail.model.TextPresentationFormat
-import com.module.notelycompose.notes.ui.detail.EditorUiState
-import com.module.notelycompose.notes.ui.detail.RecordingPathUiModel
-import com.module.notelycompose.notes.ui.detail.TextFormatUiOption
-import com.module.notelycompose.notes.ui.detail.TextUiFormat
+import com.module.bostaurus.notes.presentation.detail.model.EditorPresentationState
+import com.module.bostaurus.notes.presentation.detail.model.RecordingPathPresentationModel
+import com.module.bostaurus.notes.presentation.detail.model.TextFormatPresentationOption
+import com.module.bostaurus.notes.presentation.detail.model.TextPresentationFormat
+import com.module.bostaurus.notes.ui.detail.EditorUiState
+import com.module.bostaurus.notes.ui.detail.RecordingPathUiModel
+import com.module.bostaurus.notes.ui.detail.TextFormatUiOption
+import com.module.bostaurus.notes.ui.detail.TextUiFormat
 
 class EditorPresentationToUiStateMapper {
     fun mapToUiState(presentationState: EditorPresentationState): EditorUiState {

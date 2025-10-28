@@ -1,9 +1,9 @@
-package com.module.notelycompose.notes.data.model
+package com.module.bostaurus.notes.data.model
 
-import com.module.notelycompose.notes.domain.serializer.IntRangeSerializer
+import com.module.bostaurus.notes.domain.serializer.IntRangeSerializer
 import kotlinx.serialization.Serializable
 
-@kotlinx.serialization.Serializable
+@Serializable
 data class TextFormatDataModel(
     @Serializable(with = IntRangeSerializer::class)
     val range: IntRange,

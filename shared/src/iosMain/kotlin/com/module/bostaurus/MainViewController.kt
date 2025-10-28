@@ -1,13 +1,13 @@
-package com.module.notelycompose
+package com.module.bostaurus
 
 import androidx.compose.ui.window.ComposeUIViewController
+import com.module.bostaurus.di.init
 import org.koin.compose.KoinApplication
-import com.module.notelycompose.di.init
-fun MainViewController() = ComposeUIViewController {
+
+fun mainViewController() = ComposeUIViewController {
     KoinApplication(application = {
         init()
     }) {
-        App()
+        Main()
     }
 }
-

@@ -1,6 +1,5 @@
-package com.module.notelycompose.notes.ui.list
+package com.module.bostaurus.notes.ui.list
 
-import androidx.compose.foundation.clickable
 import androidx.compose.foundation.combinedClickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -10,7 +9,6 @@ import androidx.compose.material.icons.filled.Close
 import androidx.compose.material3.Checkbox
 import androidx.compose.material3.CheckboxDefaults
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
@@ -22,11 +20,11 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.module.notelycompose.notes.ui.detail.DeleteConfirmationDialog
-import com.module.notelycompose.notes.ui.list.model.NoteUiModel
-import com.module.notelycompose.notes.ui.theme.LocalCustomColors
-import com.module.notelycompose.resources.vectors.IcArrowUpRight
-import com.module.notelycompose.resources.vectors.Images
+import com.module.bostaurus.notes.ui.detail.DeleteConfirmationDialog
+import com.module.bostaurus.notes.ui.list.model.NoteUiModel
+import com.module.bostaurus.notes.ui.theme.LocalCustomColors
+import com.module.bostaurus.resources.vectors.IcArrowUpRight
+import com.module.bostaurus.resources.vectors.Images
 import com.module.notelycompose.resources.Res
 import com.module.notelycompose.resources.note_item_delete
 import com.module.notelycompose.resources.note_item_edit

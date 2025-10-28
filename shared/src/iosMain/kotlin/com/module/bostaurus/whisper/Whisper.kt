@@ -1,15 +1,13 @@
-package com.module.notelycompose.whisper
+package com.module.bostaurus.whisper
 
 import kotlinx.cinterop.*
 import platform.darwin.*
 import whisper.*
 import platform.CoreFoundation.*
 import platform.Foundation.NSProcessInfo
-import platform.UIKit.UIDevice
 import kotlin.math.max
 import kotlin.math.min
 import cnames.structs.whisper_context
-import kotlinx.atomicfu.AtomicBoolean
 import kotlinx.atomicfu.atomic
 import platform.posix.memcpy
 import platform.posix.uname

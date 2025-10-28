@@ -1,8 +1,8 @@
-package com.module.notelycompose
+package com.module.bostaurus
 
 import io.github.aakira.napier.DebugAntilog
 import io.github.aakira.napier.Napier
 
-fun DebugBuild() {
+fun debugBuild() {
     Napier.base(DebugAntilog())
 }

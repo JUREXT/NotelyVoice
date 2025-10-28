@@ -1,4 +1,4 @@
-package com.module.notelycompose.modelDownloader
+package com.module.bostaurus.modelDownloader
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -16,9 +16,7 @@ import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.window.Dialog
 import androidx.compose.ui.window.DialogProperties
-import com.module.notelycompose.notes.ui.theme.LocalCustomColors
-import com.module.notelycompose.modelDownloader.ModelSelection
-
+import com.module.bostaurus.notes.ui.theme.LocalCustomColors
 
 @Composable
 fun DownloaderDialog(

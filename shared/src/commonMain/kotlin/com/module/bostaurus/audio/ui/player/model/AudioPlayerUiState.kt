@@ -1,4 +1,4 @@
-package com.module.notelycompose.audio.ui.player.model
+package com.module.bostaurus.audio.ui.player.model
 
 data class AudioPlayerUiState(
     val isLoaded: Boolean,

@@ -1,4 +1,4 @@
-package com.module.notelycompose.notes.ui.settings
+package com.module.bostaurus.notes.ui.settings
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
@@ -8,10 +8,10 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.module.notelycompose.notes.ui.detail.AndroidNoteTopBar
-import com.module.notelycompose.notes.ui.detail.IOSNoteTopBar
-import com.module.notelycompose.notes.ui.theme.LocalCustomColors
-import com.module.notelycompose.platform.getPlatform
+import com.module.bostaurus.notes.ui.detail.AndroidNoteTopBar
+import com.module.bostaurus.notes.ui.detail.IOSNoteTopBar
+import com.module.bostaurus.notes.ui.theme.LocalCustomColors
+import com.module.bostaurus.platform.getPlatform
 import com.module.notelycompose.resources.Res
 import com.module.notelycompose.resources.ai_model_description
 import com.module.notelycompose.resources.ai_model_title

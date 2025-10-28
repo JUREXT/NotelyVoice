@@ -1,5 +1,6 @@
-package com.module.notelycompose.notes.ui.settings
+package com.module.bostaurus.notes.ui.settings
 
+import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -19,7 +20,7 @@ import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.module.notelycompose.notes.ui.theme.LocalCustomColors
+import com.module.bostaurus.notes.ui.theme.LocalCustomColors
 
 @Composable
 fun ModelOptionCard(
@@ -45,9 +46,9 @@ fun ModelOptionCard(
             }
         ),
         border = if (isSelected) {
-            androidx.compose.foundation.BorderStroke(2.dp, Color(0xFF2196F3)) // Blue border when selected
+            BorderStroke(2.dp, Color(0xFF2196F3)) // Blue border when selected
         } else {
-            androidx.compose.foundation.BorderStroke(1.dp, Color(0xFFE0E0E0)) // Gray border when not selected
+            BorderStroke(1.dp, Color(0xFFE0E0E0)) // Gray border when not selected
         }
     ) {
         Row(

@@ -1,7 +1,7 @@
-package com.module.notelycompose.notes.presentation.list.mapper
+package com.module.bostaurus.notes.presentation.list.mapper
 
-import com.module.notelycompose.notes.domain.model.NotesFilterDomainModel
-import com.module.notelycompose.notes.presentation.list.model.NotesFilterPresentationModel
+import com.module.bostaurus.notes.domain.model.NotesFilterDomainModel
+import com.module.bostaurus.notes.presentation.list.model.NotesFilterPresentationModel
 
 class NotesFilterMapper {
     fun mapStringToPresentationModel(

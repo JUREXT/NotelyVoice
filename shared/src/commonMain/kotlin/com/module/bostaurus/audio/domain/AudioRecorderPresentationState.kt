@@ -1,4 +1,4 @@
-package com.module.notelycompose.audio.domain
+package com.module.bostaurus.audio.domain
 
 data class AudioRecorderPresentationState(
     val recordCounterString: String = RECORD_COUNTER_START,

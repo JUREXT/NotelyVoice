@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.module.notelycompose.summary
+package com.module.bostaurus.summary
 
 // English Stop words taken from here -> https://gist.github.com/sebleier/554280
 val ENGLISH_STOP_WORDS =

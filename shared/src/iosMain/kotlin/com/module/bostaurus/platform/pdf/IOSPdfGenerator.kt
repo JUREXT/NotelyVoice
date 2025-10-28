@@ -1,4 +1,4 @@
-package com.module.notelycompose.platform.pdf
+package com.module.bostaurus.platform.pdf
 
 import kotlinx.cinterop.ExperimentalForeignApi
 import kotlinx.cinterop.useContents
@@ -7,12 +7,8 @@ import platform.Foundation.NSData
 import platform.Foundation.NSMutableData
 import platform.Foundation.NSString
 import platform.UIKit.*
-import kotlinx.cinterop.BetaInteropApi
-import kotlinx.cinterop.useContents
-import platform.CoreGraphics.CGRectMake
 import platform.Foundation.NSAttributedStringKey
 import platform.Foundation.create
-import platform.UIKit.*
 
 @OptIn(ExperimentalForeignApi::class)
 class IOSPdfGenerator {
@@ -80,7 +76,7 @@ class IOSPdfGenerator {
         val contentRect = CGRectMake(margin, margin, contentWidth, contentHeight)
 
         // Create NSString first
-        val nsString = platform.Foundation.NSString.create(string = text)
+        val nsString = NSString.create(string = text)
 
         // Draw string with attributes directly
         nsString.drawInRect(contentRect, withAttributes = textAttributes as Map<Any?, *>)

@@ -1,4 +1,4 @@
-package com.module.notelycompose
+package com.module.bostaurus
 
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.layout.WindowInsets
@@ -15,33 +15,33 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navigation
 import androidx.navigation.toRoute
-import com.module.notelycompose.Arguments.DEFAULT_NOTE_ID
-import com.module.notelycompose.audio.ui.recorder.RecordingScreen
-import com.module.notelycompose.core.Routes
-import com.module.notelycompose.core.composableNoAnimation
-import com.module.notelycompose.core.composableWithHorizontalSlide
-import com.module.notelycompose.core.composableWithVerticalSlide
-import com.module.notelycompose.core.navigateSingleTop
-import com.module.notelycompose.export.ui.ExportNotesScreen
-import com.module.notelycompose.notes.ui.detail.NoteDetailScreen
-import com.module.notelycompose.notes.ui.list.InfoScreen
-import com.module.notelycompose.notes.ui.list.NoteListScreen
-import com.module.notelycompose.notes.ui.settings.LanguageSelectionScreen
-import com.module.notelycompose.notes.ui.settings.ModelExplanationScreen
-import com.module.notelycompose.notes.ui.settings.ModelSelectionScreen
-import com.module.notelycompose.notes.ui.settings.NoteDetailTextSizeScreen
-import com.module.notelycompose.notes.ui.settings.SettingsScreen
-import com.module.notelycompose.notes.ui.settings.SettingsTextSizeScreen
-import com.module.notelycompose.notes.ui.theme.LocalCustomColors
-import com.module.notelycompose.notes.ui.theme.BostaurusTheme
-import com.module.notelycompose.onboarding.data.PreferencesRepository
-import com.module.notelycompose.onboarding.presentation.OnboardingViewModel
-import com.module.notelycompose.onboarding.presentation.model.OnboardingState
-import com.module.notelycompose.onboarding.ui.OnboardingWalkthrough
-import com.module.notelycompose.platform.Theme
-import com.module.notelycompose.platform.presentation.PlatformUiState
-import com.module.notelycompose.platform.presentation.PlatformViewModel
-import com.module.notelycompose.transcription.TranscriptionScreen
+import com.module.bostaurus.Arguments.DEFAULT_NOTE_ID
+import com.module.bostaurus.audio.ui.recorder.RecordingScreen
+import com.module.bostaurus.core.Routes
+import com.module.bostaurus.core.composableNoAnimation
+import com.module.bostaurus.core.composableWithHorizontalSlide
+import com.module.bostaurus.core.composableWithVerticalSlide
+import com.module.bostaurus.core.navigateSingleTop
+import com.module.bostaurus.export.ui.ExportNotesScreen
+import com.module.bostaurus.notes.ui.detail.NoteDetailScreen
+import com.module.bostaurus.notes.ui.list.InfoScreen
+import com.module.bostaurus.notes.ui.list.NoteListScreen
+import com.module.bostaurus.notes.ui.settings.LanguageSelectionScreen
+import com.module.bostaurus.notes.ui.settings.ModelExplanationScreen
+import com.module.bostaurus.notes.ui.settings.ModelSelectionScreen
+import com.module.bostaurus.notes.ui.settings.NoteDetailTextSizeScreen
+import com.module.bostaurus.notes.ui.settings.SettingsScreen
+import com.module.bostaurus.notes.ui.settings.SettingsTextSizeScreen
+import com.module.bostaurus.notes.ui.theme.LocalCustomColors
+import com.module.bostaurus.notes.ui.theme.BostaurusTheme
+import com.module.bostaurus.onboarding.data.PreferencesRepository
+import com.module.bostaurus.onboarding.presentation.OnboardingViewModel
+import com.module.bostaurus.onboarding.presentation.model.OnboardingState
+import com.module.bostaurus.onboarding.ui.OnboardingWalkthrough
+import com.module.bostaurus.platform.Theme
+import com.module.bostaurus.platform.presentation.PlatformUiState
+import com.module.bostaurus.platform.presentation.PlatformViewModel
+import com.module.bostaurus.transcription.TranscriptionScreen
 import org.koin.compose.koinInject
 import org.koin.compose.viewmodel.koinViewModel
 import org.koin.core.annotation.KoinExperimentalAPI
@@ -54,7 +54,7 @@ object Arguments {
 
 @OptIn(KoinExperimentalAPI::class)
 @Composable
-fun App(
+fun Main(
     preferencesRepository: PreferencesRepository = koinInject()
 ) {
     val uiMode by preferencesRepository.getTheme().collectAsState(Theme.SYSTEM.name)
@@ -85,15 +85,14 @@ fun App(
                     )
                 }
 
-                is OnboardingState.Completed -> NoteAppRoot(platformUiState)
+                is OnboardingState.Completed -> MainNavHost(platformUiState)
             }
         }
     }
 }
 
-
 @Composable
-fun NoteAppRoot(platformUiState: PlatformUiState) {
+fun MainNavHost(platformUiState: PlatformUiState) {
     val navController = rememberNavController()
     NavHost(
         navController,

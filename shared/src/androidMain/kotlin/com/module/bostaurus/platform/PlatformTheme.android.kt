@@ -1,15 +1,17 @@
-package com.module.notelycompose.platform
+package com.module.bostaurus.platform
 
 import android.content.Context
 import android.content.Intent
 import androidx.core.content.FileProvider
 import java.io.File
 import android.Manifest
+import android.content.ClipData
+import android.content.ClipboardManager
 import android.content.pm.PackageManager
 import android.os.Build
 import androidx.core.net.toUri
-import com.module.notelycompose.FileSaverHandler
-import com.module.notelycompose.platform.pdf.AndroidPdfGenerator
+import com.module.bostaurus.FileSaverHandler
+import com.module.bostaurus.platform.pdf.AndroidPdfGenerator
 
 actual class PlatformUtils(
     private val context: Context,
@@ -168,8 +170,8 @@ actual class PlatformUtils(
 
     actual fun copyTextToClipboard(text: String, onResult: (Boolean, String?) -> Unit) {
         try {
-            val clipboard = context.getSystemService(Context.CLIPBOARD_SERVICE) as android.content.ClipboardManager
-            val clip = android.content.ClipData.newPlainText("text", text)
+            val clipboard = context.getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
+            val clip = ClipData.newPlainText("text", text)
             clipboard.setPrimaryClip(clip)
             onResult(true, "Text copied to clipboard")
         } catch (e: Exception) {

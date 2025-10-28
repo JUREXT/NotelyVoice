@@ -1,6 +1,6 @@
-package com.module.notelycompose.modelDownloader
+package com.module.bostaurus.modelDownloader
 
-import com.module.notelycompose.onboarding.data.PreferencesRepository
+import com.module.bostaurus.onboarding.data.PreferencesRepository
 import kotlinx.coroutines.flow.first
 
 const val NO_MODEL_SELECTION = -1

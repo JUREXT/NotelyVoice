@@ -1,6 +1,6 @@
-package com.module.notelycompose.audio.domain
+package com.module.bostaurus.audio.domain
 
-import com.module.notelycompose.audio.ui.recorder.AudioRecorderUiState
+import com.module.bostaurus.audio.ui.recorder.AudioRecorderUiState
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.flow.StateFlow
 

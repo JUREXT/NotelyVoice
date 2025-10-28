@@ -1,4 +1,4 @@
-package com.module.notelycompose.platform
+package com.module.bostaurus.platform
 
 enum class Theme(val displayName: String) {
     LIGHT("Light"),

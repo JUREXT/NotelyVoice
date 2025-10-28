@@ -1,19 +1,20 @@
-package com.module.notelycompose.notes.presentation.list
+package com.module.bostaurus.notes.presentation.list
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import audio.utils.deleteFile
-import com.module.notelycompose.notes.domain.DeleteNoteById
-import com.module.notelycompose.notes.domain.GetAllNotesUseCase
-import com.module.notelycompose.notes.domain.model.NoteDomainModel
-import com.module.notelycompose.notes.domain.model.NotesFilterDomainModel
-import com.module.notelycompose.notes.presentation.helpers.getFirstNonEmptyLineAfterFirst
-import com.module.notelycompose.notes.presentation.helpers.returnFirstLine
-import com.module.notelycompose.notes.presentation.helpers.truncateWithEllipsis
-import com.module.notelycompose.notes.presentation.list.mapper.NotesFilterMapper
-import com.module.notelycompose.notes.presentation.list.model.NotePresentationModel
-import com.module.notelycompose.notes.presentation.mapper.NotePresentationMapper
-import com.module.notelycompose.notes.ui.list.model.NoteUiModel
+import com.module.bostaurus.notes.domain.DeleteNoteById
+import com.module.bostaurus.notes.domain.GetAllNotesUseCase
+import com.module.bostaurus.notes.domain.model.NoteDomainModel
+import com.module.bostaurus.notes.domain.model.NotesFilterDomainModel
+import com.module.bostaurus.notes.presentation.helpers.getFirstNonEmptyLineAfterFirst
+import com.module.bostaurus.notes.presentation.helpers.returnFirstLine
+import com.module.bostaurus.notes.presentation.helpers.truncateWithEllipsis
+import com.module.bostaurus.notes.presentation.list.mapper.NotesFilterMapper
+import com.module.bostaurus.notes.presentation.list.model.NotePresentationModel
+import com.module.bostaurus.notes.presentation.mapper.NotePresentationMapper
+import com.module.bostaurus.notes.ui.list.model.NoteUiModel
+import kotlinx.coroutines.FlowPreview
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.combine
@@ -47,6 +48,7 @@ class NoteListViewModel(
         setupSearch()
     }
 
+    @OptIn(FlowPreview::class)
     private fun setupSearch() {
         // Combine notes flow with filter and search
 

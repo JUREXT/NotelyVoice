@@ -1,4 +1,4 @@
-package com.module.notelycompose.transcription
+package com.module.bostaurus.transcription
 
 data class TranscriptionUiState(
     val inTranscription: Boolean = false,

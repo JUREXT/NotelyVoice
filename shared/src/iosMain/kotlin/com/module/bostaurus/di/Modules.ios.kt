@@ -1,26 +1,23 @@
-package com.module.notelycompose.di
-
-
-import com.module.notelycompose.audio.domain.AudioRecorderInteractor
-import com.module.notelycompose.audio.domain.AudioRecorderInteractorImpl
+package com.module.bostaurus.di
+import com.module.bostaurus.audio.domain.AudioRecorderInteractor
+import com.module.bostaurus.audio.domain.AudioRecorderInteractorImpl
 import com.module.notelycompose.database.NoteDatabase
-import com.module.notelycompose.export.domain.ExportSelectionInteractor
-import com.module.notelycompose.export.domain.ExportSelectionInteractorImpl
-import com.module.notelycompose.platform.BrowserLauncher
-import com.module.notelycompose.platform.Downloader
-import com.module.notelycompose.platform.IOSPlatform
-import com.module.notelycompose.platform.Platform
-import com.module.notelycompose.platform.PlatformAudioPlayer
-import com.module.notelycompose.platform.PlatformUtils
-import com.module.notelycompose.platform.Transcriber
-import com.module.notelycompose.platform.dataStore
-import com.module.notelycompose.platform.pdf.IOSPdfGenerator
+import com.module.bostaurus.export.domain.ExportSelectionInteractor
+import com.module.bostaurus.export.domain.ExportSelectionInteractorImpl
+import com.module.bostaurus.platform.BrowserLauncher
+import com.module.bostaurus.platform.Downloader
+import com.module.bostaurus.platform.IOSPlatform
+import com.module.bostaurus.platform.Platform
+import com.module.bostaurus.platform.PlatformAudioPlayer
+import com.module.bostaurus.platform.PlatformUtils
+import com.module.bostaurus.platform.Transcriber
+import com.module.bostaurus.platform.dataStore
+import com.module.bostaurus.platform.pdf.IOSPdfGenerator
 import com.squareup.sqldelight.db.SqlDriver
 import com.squareup.sqldelight.drivers.native.NativeSqliteDriver
 import org.koin.core.qualifier.named
 import org.koin.dsl.module
 import platform.Foundation.NSBundle
-
 
 actual val platformModule = module {
 

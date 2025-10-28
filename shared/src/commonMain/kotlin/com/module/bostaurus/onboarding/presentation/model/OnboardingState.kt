@@ -1,4 +1,4 @@
-package com.module.notelycompose.onboarding.presentation.model
+package com.module.bostaurus.onboarding.presentation.model
 
 sealed class OnboardingState {
     object Initial : OnboardingState()

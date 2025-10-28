@@ -1,7 +1,7 @@
-package com.module.notelycompose.modelDownloader
+package com.module.bostaurus.modelDownloader
 
 data class DownloaderUiState(
-    val selectedModel:TranscriptionModel ,
+    val selectedModel: TranscriptionModel,
     val downloading:Boolean = false,
     val progress: Float = 0f,
     val downloaded: String = "0 MB ",

@@ -1,4 +1,4 @@
-package com.module.notelycompose.notes.ui.settings
+package com.module.bostaurus.notes.ui.settings
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
@@ -42,14 +42,13 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.module.notelycompose.modelDownloader.FARSI
-import com.module.notelycompose.modelDownloader.OPTIMIZED_MODEL_SELECTION
-import com.module.notelycompose.modelDownloader.STANDARD_MODEL_SELECTION
-import com.module.notelycompose.notes.ui.detail.AndroidNoteTopBar
-import com.module.notelycompose.notes.ui.detail.IOSNoteTopBar
-import com.module.notelycompose.notes.ui.theme.LocalCustomColors
-import com.module.notelycompose.onboarding.data.PreferencesRepository
-import com.module.notelycompose.platform.getPlatform
+import com.module.bostaurus.modelDownloader.FARSI
+import com.module.bostaurus.modelDownloader.OPTIMIZED_MODEL_SELECTION
+import com.module.bostaurus.notes.ui.detail.AndroidNoteTopBar
+import com.module.bostaurus.notes.ui.detail.IOSNoteTopBar
+import com.module.bostaurus.notes.ui.theme.LocalCustomColors
+import com.module.bostaurus.onboarding.data.PreferencesRepository
+import com.module.bostaurus.platform.getPlatform
 import kotlinx.coroutines.launch
 import org.koin.compose.koinInject
 import com.module.notelycompose.resources.Res

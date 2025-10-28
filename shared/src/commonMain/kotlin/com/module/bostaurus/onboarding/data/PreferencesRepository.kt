@@ -1,4 +1,4 @@
-package com.module.notelycompose.onboarding.data
+package com.module.bostaurus.onboarding.data
 
 import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
@@ -8,10 +8,10 @@ import androidx.datastore.preferences.core.floatPreferencesKey
 import androidx.datastore.preferences.core.intPreferencesKey
 import androidx.datastore.preferences.core.longPreferencesKey
 import androidx.datastore.preferences.core.stringPreferencesKey
-import com.module.notelycompose.notes.extension.TEXT_SIZE_BODY
-import com.module.notelycompose.modelDownloader.NO_MODEL_SELECTION
-import com.module.notelycompose.notes.ui.settings.languageCodeMap
-import com.module.notelycompose.platform.Theme
+import com.module.bostaurus.notes.extension.TEXT_SIZE_BODY
+import com.module.bostaurus.modelDownloader.NO_MODEL_SELECTION
+import com.module.bostaurus.notes.ui.settings.languageCodeMap
+import com.module.bostaurus.platform.Theme
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.map

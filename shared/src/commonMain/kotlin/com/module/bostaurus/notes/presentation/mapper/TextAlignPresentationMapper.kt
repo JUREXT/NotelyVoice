@@ -1,7 +1,7 @@
-package com.module.notelycompose.notes.presentation.mapper
+package com.module.bostaurus.notes.presentation.mapper
 
 import androidx.compose.ui.text.style.TextAlign
-import com.module.notelycompose.notes.domain.model.TextAlignDomainModel
+import com.module.bostaurus.notes.domain.model.TextAlignDomainModel
 
 class TextAlignPresentationMapper {
     fun mapToDomainModel(textAlign: TextAlign): TextAlignDomainModel {

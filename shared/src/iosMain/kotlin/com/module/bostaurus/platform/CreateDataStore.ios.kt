@@ -1,4 +1,4 @@
-package com.module.notelycompose.platform
+package com.module.bostaurus.platform
 
 import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
@@ -17,6 +17,6 @@ fun dataStore(): DataStore<Preferences> {
             create = false,
             error = null
         )
-        requireNotNull(directory).path + "/$DATA_STORE_FILE_NAME"
+        requireNotNull(directory).path + "/${DATA_STORE_FILE_NAME}"
     }
 }

@@ -1,4 +1,4 @@
-package com.module.notelycompose.notes.ui.detail
+package com.module.bostaurus.notes.ui.detail
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
@@ -15,13 +15,13 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
-import com.module.notelycompose.resources.vectors.IcDetailAlignCenter
-import com.module.notelycompose.resources.vectors.IcDetailAlignLeft
-import com.module.notelycompose.resources.vectors.IcDetailAlignRight
-import com.module.notelycompose.resources.vectors.IcDetailBold
-import com.module.notelycompose.resources.vectors.IcDetailItalic
-import com.module.notelycompose.resources.vectors.IcDetailUnderline
-import com.module.notelycompose.resources.vectors.Images
+import com.module.bostaurus.resources.vectors.IcDetailAlignCenter
+import com.module.bostaurus.resources.vectors.IcDetailAlignLeft
+import com.module.bostaurus.resources.vectors.IcDetailAlignRight
+import com.module.bostaurus.resources.vectors.IcDetailBold
+import com.module.bostaurus.resources.vectors.IcDetailItalic
+import com.module.bostaurus.resources.vectors.IcDetailUnderline
+import com.module.bostaurus.resources.vectors.Images
 import com.module.notelycompose.resources.Res
 import com.module.notelycompose.resources.editing_bold
 import com.module.notelycompose.resources.editing_italic

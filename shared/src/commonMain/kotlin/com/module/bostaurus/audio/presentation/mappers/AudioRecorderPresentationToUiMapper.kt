@@ -1,7 +1,7 @@
-package com.module.notelycompose.audio.presentation.mappers
+package com.module.bostaurus.audio.presentation.mappers
 
-import com.module.notelycompose.audio.domain.AudioRecorderPresentationState
-import com.module.notelycompose.audio.ui.recorder.AudioRecorderUiState
+import com.module.bostaurus.audio.domain.AudioRecorderPresentationState
+import com.module.bostaurus.audio.ui.recorder.AudioRecorderUiState
 
 class AudioRecorderPresentationToUiMapper {
     fun mapToUiState(presentationState: AudioRecorderPresentationState): AudioRecorderUiState {

@@ -1,4 +1,4 @@
-package com.module.notelycompose.di
+package com.module.bostaurus.di
 
 import audio.di.audioModule
 import org.koin.core.KoinApplication

@@ -1,9 +1,9 @@
-package com.module.notelycompose.notes.data
+package com.module.bostaurus.notes.data
 
-import com.module.notelycompose.notes.data.model.NoteDataModel
-import com.module.notelycompose.notes.data.model.TextAlignDataModel
-import com.module.notelycompose.notes.data.model.TextFormatDataModel
-import com.module.notelycompose.notes.domain.model.Note
+import com.module.bostaurus.notes.data.model.NoteDataModel
+import com.module.bostaurus.notes.data.model.TextAlignDataModel
+import com.module.bostaurus.notes.data.model.TextFormatDataModel
+import com.module.bostaurus.notes.domain.model.Note
 import database.NotesEntity
 import kotlinx.datetime.Instant
 import kotlinx.datetime.TimeZone

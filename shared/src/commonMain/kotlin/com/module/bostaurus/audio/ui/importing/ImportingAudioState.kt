@@ -1,4 +1,4 @@
-package com.module.notelycompose.audio.ui.importing
+package com.module.bostaurus.audio.ui.importing
 
 sealed interface ImportingAudioState {
     object Idle : ImportingAudioState

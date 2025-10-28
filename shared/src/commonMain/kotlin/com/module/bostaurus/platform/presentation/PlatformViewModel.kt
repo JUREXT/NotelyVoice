@@ -1,10 +1,10 @@
-package com.module.notelycompose.platform.presentation
+package com.module.bostaurus.platform.presentation
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.module.notelycompose.onboarding.data.PreferencesRepository
-import com.module.notelycompose.platform.Platform
-import com.module.notelycompose.platform.PlatformUtils
+import com.module.bostaurus.onboarding.data.PreferencesRepository
+import com.module.bostaurus.platform.Platform
+import com.module.bostaurus.platform.PlatformUtils
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.first

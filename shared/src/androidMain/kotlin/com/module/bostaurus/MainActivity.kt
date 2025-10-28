@@ -1,5 +1,6 @@
-package com.module.notelycompose
+package com.module.bostaurus
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
@@ -12,8 +13,8 @@ import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.graphics.Color
 import com.google.accompanist.systemuicontroller.rememberSystemUiController
-import com.module.notelycompose.onboarding.data.PreferencesRepository
-import com.module.notelycompose.platform.Theme
+import com.module.bostaurus.onboarding.data.PreferencesRepository
+import com.module.bostaurus.platform.Theme
 import android.net.Uri
 import androidx.activity.result.contract.ActivityResultContracts
 
@@ -40,7 +41,7 @@ class MainActivity : AppCompatActivity() {
                 color = Color.Transparent,
                 darkIcons = !darkTheme
             )
-            App()
+            Main()
         }
     }
 
@@ -59,8 +60,8 @@ class MainActivity : AppCompatActivity() {
                 if (uri != null) {
                     contentResolver.takePersistableUriPermission(
                         uri,
-                        android.content.Intent.FLAG_GRANT_READ_URI_PERMISSION or
-                                android.content.Intent.FLAG_GRANT_WRITE_URI_PERMISSION
+                        Intent.FLAG_GRANT_READ_URI_PERMISSION or
+                                Intent.FLAG_GRANT_WRITE_URI_PERMISSION
                     )
                 }
                 // Always invoke callback, even if uri is null

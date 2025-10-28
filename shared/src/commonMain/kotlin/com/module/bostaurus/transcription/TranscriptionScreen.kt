@@ -1,4 +1,4 @@
-package com.module.notelycompose.transcription
+package com.module.bostaurus.transcription
 
 import androidx.compose.animation.core.animateFloatAsState
 import androidx.compose.animation.core.tween
@@ -19,6 +19,7 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.Card
 import androidx.compose.material.LinearProgressIndicator
+import androidx.compose.material.MaterialTheme
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.material3.AlertDialog
@@ -40,12 +41,12 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.input.TextFieldValue
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.module.notelycompose.notes.presentation.detail.TextEditorViewModel
-import com.module.notelycompose.notes.ui.theme.LocalCustomColors
-import com.module.notelycompose.platform.HandlePlatformBackNavigation
-import com.module.notelycompose.platform.getPlatform
-import com.module.notelycompose.resources.vectors.IcChevronLeft
-import com.module.notelycompose.resources.vectors.Images
+import com.module.bostaurus.notes.presentation.detail.TextEditorViewModel
+import com.module.bostaurus.notes.ui.theme.LocalCustomColors
+import com.module.bostaurus.platform.HandlePlatformBackNavigation
+import com.module.bostaurus.platform.getPlatform
+import com.module.bostaurus.resources.vectors.IcChevronLeft
+import com.module.bostaurus.resources.vectors.Images
 import com.module.notelycompose.resources.Res
 import com.module.notelycompose.resources.top_bar_back
 import com.module.notelycompose.resources.transcription_dialog_append
@@ -254,7 +255,7 @@ fun BackButton(
             Spacer(modifier = Modifier.width(8.dp))
             androidx.compose.material.Text(
                 text = stringResource(Res.string.top_bar_back),
-                style = androidx.compose.material.MaterialTheme.typography.body1,
+                style = MaterialTheme.typography.body1,
                 color = LocalCustomColors.current.bodyContentColor
             )
         }

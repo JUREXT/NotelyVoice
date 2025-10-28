@@ -1,11 +1,11 @@
-package com.module.notelycompose.service
+package com.module.bostaurus.service
 
 import android.graphics.drawable.Icon
 import android.service.quicksettings.Tile
 import android.service.quicksettings.TileService
 import com.module.notelycompose.android.R
-import com.module.notelycompose.extensions.launchMainActivityFromTile
-import com.module.notelycompose.extensions.startRecordingService
+import com.module.bostaurus.extensions.launchMainActivityFromTile
+import com.module.bostaurus.extensions.startRecordingService
 
 class RecordingTileService : TileService() {
 

@@ -1,9 +1,9 @@
-package com.module.notelycompose.audio.domain
+package com.module.bostaurus.audio.domain
 
 import audio.recorder.AudioRecorder
-import com.module.notelycompose.audio.presentation.mappers.AudioRecorderPresentationToUiMapper
-import com.module.notelycompose.audio.ui.recorder.AudioRecorderUiState
-import com.module.notelycompose.core.debugPrintln
+import com.module.bostaurus.audio.presentation.mappers.AudioRecorderPresentationToUiMapper
+import com.module.bostaurus.audio.ui.recorder.AudioRecorderUiState
+import com.module.bostaurus.core.debugPrintln
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.IO

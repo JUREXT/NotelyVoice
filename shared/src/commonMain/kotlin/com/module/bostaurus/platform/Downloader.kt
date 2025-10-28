@@ -1,4 +1,4 @@
-package com.module.notelycompose.platform
+package com.module.bostaurus.platform
 
 expect class Downloader {
     suspend fun startDownload(url: String, fileName: String)

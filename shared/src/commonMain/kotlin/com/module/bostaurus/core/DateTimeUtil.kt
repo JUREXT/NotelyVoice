@@ -1,4 +1,4 @@
-package com.module.notelycompose.core
+package com.module.bostaurus.core
 
 import kotlinx.datetime.Clock
 import kotlinx.datetime.LocalDateTime

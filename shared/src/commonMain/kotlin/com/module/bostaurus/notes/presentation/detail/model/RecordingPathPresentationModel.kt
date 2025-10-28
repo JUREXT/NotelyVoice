@@ -1,4 +1,4 @@
-package com.module.notelycompose.notes.presentation.detail.model
+package com.module.bostaurus.notes.presentation.detail.model
 
 data class RecordingPathPresentationModel(
     val recordingPath: String = "",

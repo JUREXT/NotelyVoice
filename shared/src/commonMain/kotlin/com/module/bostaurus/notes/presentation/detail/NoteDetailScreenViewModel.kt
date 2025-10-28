@@ -1,19 +1,17 @@
-package com.module.notelycompose.notes.presentation.detail
+package com.module.bostaurus.notes.presentation.detail
 
 import androidx.compose.ui.text.input.TextFieldValue
 import androidx.compose.ui.text.style.TextAlign
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.module.notelycompose.notes.domain.DeleteNoteById
-import com.module.notelycompose.notes.domain.GetLastNote
-import com.module.notelycompose.notes.domain.GetNoteById
-import com.module.notelycompose.notes.domain.InsertNoteUseCase
-import com.module.notelycompose.notes.domain.UpdateNoteUseCase
-import com.module.notelycompose.notes.presentation.detail.model.TextPresentationFormat
-import com.module.notelycompose.notes.presentation.mapper.TextAlignPresentationMapper
-import com.module.notelycompose.notes.presentation.mapper.TextFormatPresentationMapper
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Dispatchers
+import com.module.bostaurus.notes.domain.DeleteNoteById
+import com.module.bostaurus.notes.domain.GetLastNote
+import com.module.bostaurus.notes.domain.GetNoteById
+import com.module.bostaurus.notes.domain.InsertNoteUseCase
+import com.module.bostaurus.notes.domain.UpdateNoteUseCase
+import com.module.bostaurus.notes.presentation.detail.model.TextPresentationFormat
+import com.module.bostaurus.notes.presentation.mapper.TextAlignPresentationMapper
+import com.module.bostaurus.notes.presentation.mapper.TextFormatPresentationMapper
 import kotlinx.coroutines.launch
 import kotlinx.datetime.Clock
 import kotlinx.datetime.TimeZone
@@ -69,11 +67,13 @@ class NoteDetailScreenViewModel(
             }
             isUpdate -> {
                 val lastNoteId = getLastNote()?.id ?: 0L
-                onEvent(NoteDetailScreenEvent
+                onEvent(
+                    NoteDetailScreenEvent
                     .UpdateNote(lastNoteId, title, content, formatting, textAlign)
                 )
             }
-            else -> onEvent(NoteDetailScreenEvent
+            else -> onEvent(
+                NoteDetailScreenEvent
                 .NoteSaved(title, content, formatting, textAlign)
             )
         }

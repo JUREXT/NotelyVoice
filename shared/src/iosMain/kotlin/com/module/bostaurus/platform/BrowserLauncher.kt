@@ -1,4 +1,4 @@
-package com.module.notelycompose.platform
+package com.module.bostaurus.platform
 
 actual class BrowserLauncher {
     actual fun openUrl(url: String) {

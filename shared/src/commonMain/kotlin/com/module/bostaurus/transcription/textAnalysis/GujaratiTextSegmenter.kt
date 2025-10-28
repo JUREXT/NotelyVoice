@@ -1,4 +1,4 @@
-package com.module.notelycompose.transcription.textAnalysis
+package com.module.bostaurus.transcription.textAnalysis
 
 class GujaratiTextSegmenter: TextSegmenter {
 

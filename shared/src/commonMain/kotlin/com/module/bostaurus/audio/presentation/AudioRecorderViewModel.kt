@@ -1,11 +1,11 @@
-package com.module.notelycompose.audio.presentation
+package com.module.bostaurus.audio.presentation
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.module.notelycompose.audio.domain.AudioRecorderInteractor
-import com.module.notelycompose.audio.domain.AudioRecorderPresentationState
-import com.module.notelycompose.audio.ui.recorder.AudioRecorderUiState
-import com.module.notelycompose.audio.ui.recorder.ScreenState
+import com.module.bostaurus.audio.domain.AudioRecorderInteractor
+import com.module.bostaurus.audio.domain.AudioRecorderPresentationState
+import com.module.bostaurus.audio.ui.recorder.AudioRecorderUiState
+import com.module.bostaurus.audio.ui.recorder.ScreenState
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow

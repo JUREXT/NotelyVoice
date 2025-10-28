@@ -1,4 +1,4 @@
-package com.module.notelycompose.resources.vectors
+package com.module.bostaurus.resources.vectors
 
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.SolidColor

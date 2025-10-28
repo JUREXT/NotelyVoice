@@ -1,7 +1,7 @@
-package com.module.notelycompose.notes.domain
+package com.module.bostaurus.notes.domain
 
-import com.module.notelycompose.notes.domain.mapper.NoteDomainMapper
-import com.module.notelycompose.notes.domain.model.NoteDomainModel
+import com.module.bostaurus.notes.domain.mapper.NoteDomainMapper
+import com.module.bostaurus.notes.domain.model.NoteDomainModel
 
 class GetLastNote(
     private val noteDataSource: NoteDataSource,

@@ -1,10 +1,9 @@
-package com.module.notelycompose.notes.domain
+package com.module.bostaurus.notes.domain
 
-import com.module.notelycompose.core.CommonFlow
-import com.module.notelycompose.notes.data.model.NoteDataModel
-import com.module.notelycompose.notes.data.model.TextAlignDataModel
-import com.module.notelycompose.notes.data.model.TextFormatDataModel
-import com.module.notelycompose.notes.domain.model.Note
+import com.module.bostaurus.core.CommonFlow
+import com.module.bostaurus.notes.data.model.NoteDataModel
+import com.module.bostaurus.notes.data.model.TextAlignDataModel
+import com.module.bostaurus.notes.data.model.TextFormatDataModel
 
 
 interface NoteDataSource {

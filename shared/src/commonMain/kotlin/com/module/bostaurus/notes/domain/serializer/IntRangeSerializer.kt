@@ -1,4 +1,4 @@
-package com.module.notelycompose.notes.domain.serializer
+package com.module.bostaurus.notes.domain.serializer
 
 import kotlinx.serialization.KSerializer
 import kotlinx.serialization.descriptors.SerialDescriptor

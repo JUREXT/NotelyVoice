@@ -1,4 +1,4 @@
-package com.module.notelycompose.notes.ui.list
+package com.module.bostaurus.notes.ui.list
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
@@ -18,16 +18,16 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.LifecycleEventObserver
-import com.module.notelycompose.platform.getPlatform
-import com.module.notelycompose.notes.ui.detail.AndroidNoteTopBar
-import com.module.notelycompose.notes.ui.detail.IOSNoteTopBar
-import com.module.notelycompose.notes.ui.theme.LocalCustomColors
-import com.module.notelycompose.platform.BrowserLauncher
-import com.module.notelycompose.platform.HandlePlatformBackNavigation
-import com.module.notelycompose.platform.presentation.PlatformViewModel
-import com.module.notelycompose.resources.vectors.IcFaq
-import com.module.notelycompose.resources.vectors.Images
-import com.module.notelycompose.web.ui.WebViewScreen
+import com.module.bostaurus.platform.getPlatform
+import com.module.bostaurus.notes.ui.detail.AndroidNoteTopBar
+import com.module.bostaurus.notes.ui.detail.IOSNoteTopBar
+import com.module.bostaurus.notes.ui.theme.LocalCustomColors
+import com.module.bostaurus.platform.BrowserLauncher
+import com.module.bostaurus.platform.HandlePlatformBackNavigation
+import com.module.bostaurus.platform.presentation.PlatformViewModel
+import com.module.bostaurus.resources.vectors.IcFaq
+import com.module.bostaurus.resources.vectors.Images
+import com.module.bostaurus.web.ui.WebViewScreen
 import com.module.notelycompose.resources.Res
 import com.module.notelycompose.resources.information_base_url
 import com.module.notelycompose.resources.faq_url

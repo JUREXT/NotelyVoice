@@ -1,7 +1,7 @@
-package com.module.notelycompose
+package com.module.bostaurus
 
 import android.app.Application
-import com.module.notelycompose.di.initKoinApplication
+import com.module.bostaurus.di.initKoinApplication
 import io.github.aakira.napier.DebugAntilog
 import io.github.aakira.napier.Napier
 import org.koin.android.ext.koin.androidContext
