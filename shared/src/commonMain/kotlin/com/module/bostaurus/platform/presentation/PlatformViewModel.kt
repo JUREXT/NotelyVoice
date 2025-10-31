@@ -16,6 +16,7 @@ class PlatformViewModel (
     private val platformUtils: PlatformUtils,
     private val preferencesRepository: PreferencesRepository
 ) :ViewModel(){
+
     private val _state = MutableStateFlow(PlatformUiState())
     val state: StateFlow<PlatformUiState> = _state
 

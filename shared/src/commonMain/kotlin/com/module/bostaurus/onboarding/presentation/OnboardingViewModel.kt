@@ -9,9 +9,11 @@ import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
 
+// TODO: https://medium.com/mateedevs/liquid-glass-components-in-compose-multiplatform-71b7a9ffc56d
 class OnboardingViewModel(
-    private val preferencesRepository: PreferencesRepository,
-) : ViewModel(){
+    private val preferencesRepository: PreferencesRepository
+) : ViewModel() {
+
     private val _onboardingState = MutableStateFlow<OnboardingState>(OnboardingState.Completed)
     val onboardingState: StateFlow<OnboardingState> = _onboardingState.asStateFlow()
 

@@ -38,19 +38,15 @@ import org.koin.core.module.dsl.singleOf
 import org.koin.core.module.dsl.viewModelOf
 import org.koin.dsl.module
 
-
 internal expect val platformModule: Module
 
 val appModule = module {
-
     single<NoteDataSource> {
         NoteSqlDelightDataSource(
             database = NoteDatabase(get())
         )
     }
-
     factory { ModelSelection(get()) }
-
 }
 
 val mapperModule = module {
@@ -65,6 +61,7 @@ val mapperModule = module {
     single { TextAlignPresentationMapper() }
     single { TextEditorHelper() }
 }
+
 val repositoryModule = module {
     singleOf(::PreferencesRepository)
 }

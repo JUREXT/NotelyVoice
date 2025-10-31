@@ -32,9 +32,6 @@ interface WhisperCallback{
     private val context: CValuesRef<whisper_context>
 ) {
 
-
-
-
     fun stopTranscribing() {
         stopTranscription.value = true
     }
