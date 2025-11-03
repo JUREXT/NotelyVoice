@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Notely Voice</string>
     <string name="error">Viga</string>
     <string name="close">Sulge</string>
     <string name="cancel">Katkesta</string>
     <string name="navigate">Liigu rakenduses</string>
     <!-- TopBar -->
     <string name="top_bar_back">Tagasi</string>
-    <string name="top_bar_notes">Notely Voice</string>
+    <string name="top_bar_notes">@string/app_name</string>
     <string name="top_bar_menu">Menüü</string>
     <string name="top_bar_my_note">Minu märge</string>
     <string name="top_bar_export_audio_folder">Ekspordi helifailid kausta</string>

@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Notely Voice</string>
     <string name="error">Virhe</string>
     <string name="close">Sulje</string>
     <string name="cancel">Peruuta</string>
     <string name="navigate">Navigoi</string>
     <!-- TopBar -->
     <string name="top_bar_back">Takaisin</string>
-    <string name="top_bar_notes">Notely Voice</string>
+    <string name="top_bar_notes">@string/app_name</string>
     <string name="top_bar_menu">Valikko</string>
     <string name="top_bar_my_note">Muistiinpanoni</string>
     <string name="top_bar_export_audio_folder">Vie ääni kansioon</string>

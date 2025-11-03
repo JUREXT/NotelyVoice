@@ -1,0 +1,250 @@
+<resources>
+
+    <string name="general_error_close">Close</string>
+    <string name="general_error_message">Operation error</string>
+    <string name="general_search">Search</string>
+
+    <string name="app_top_bar_home">Home</string>
+    <string name="app_top_bar_ads_for_me">Ads for Me</string>
+    <string name="app_top_bar_saved">Saved</string>
+    <string name="app_top_bar_my_ads">My advertisement</string>
+    <string name="app_top_bar_information">Information</string>
+
+    <string name="company_advertisement_for_you">Advertisement</string>
+    <string name="recommended_for_you">Recommended for you</string>
+    <string name="latest_ads">Latest advertising</string>
+    <string name="nearby_for_you">Nearby for you</string>
+
+    <!-- Splash Screen -->
+    <string name="splash_app_name">@string/app_name</string>
+    <string name="app_slogan">Buy and Sell Farm Animals.</string>
+
+    <!-- Information Screen -->
+    <string name="information_create_ad">Create New Ad</string>
+    <string name="information_statistic">Statistic</string>
+    <string name="information_visit_online">Visit online</string>
+    <string name="information_visit_online_shop">Visit shop</string>
+    <string name="information_share_with_friends">Share with friends</string>
+    <string name="information_advertising">Advertising</string>
+    <string name="information_help_and_info">Help and information</string>
+    <string name="information_news">News</string>
+    <string name="information_about_app">About app</string>
+    <string name="information_problem_in_app">Report problem</string>
+    <string name="information_dark_light_mode">App theme</string>
+    <string name="information_app_version">App Version: %s</string>
+
+    <!-- Statistic Information Screen -->
+    <string name="statistic_information_advertising">Statistic</string>
+    <string name="statistic_information_data_last_30_day">Average cattle prices over the past 30 days.</string>
+
+    <!-- Company Advertising Information Screen -->
+    <string name="company_advertising_information_advertising">Advertising</string>
+    <string name="company_advertising_information_cooperation_info">For any questions, write to us at test@test.si. If you are an agricultural company and would like to publish your ads on the Bostaurus app, visit "Http.." and sign up and contact us at test@test.si. We will be happy to cooperate.</string>
+
+    <!-- Help Information Screen -->
+    <string name="help_information_information_help">Help and information</string>
+    <string name="help_information_information_help_info">Bostaurus App is a new generation advertising platform. It already has approximately 10,000 monthly unique users. For help, write to test@test.si.</string>
+
+    <!-- Home Screen -->
+    <string name="home_show_more">Show more</string>
+
+    <!-- Display Images Screen -->
+    <string name="display_images_text">Gallery</string>
+
+    <!-- Edit Images Screen -->
+    <string name="edit_images_text">Images</string>
+    <string name="edit_delete_images_text">Delete images</string>
+
+    <!-- About App Screen -->
+    <string name="about_app_toolbar_text">About app</string>
+    <string name="about_app_new_version_available">A new version is available.</string>
+    <string name="about_app_new_version_available_action">Update</string>
+
+    <!-- App version info -->
+    <string name="app_version">Bostaurus v%s</string>
+    <string name="app_version_code">Version code: %d</string>
+    <string name="app_api_server">API Server: %s</string>
+
+    <!-- Verification Screen -->
+    <string name="verification_enter_code">Enter validation code.</string>
+    <string name="verification_enter_email">Enter email.</string>
+    <string name="verification_start_verification">Verify</string>
+    <string name="verification_register_account">Register Account</string>
+    <string name="verification_loading_message">Verifying code…</string>
+    <string name="verification_success_message">Verification completed.</string>
+    <string name="verification_error_check_email">Check is email correct!</string>
+    <string name="verification_error_check_code">Check is activation code correct!</string>
+    <string name="verification_error_invalid_email">Invalid email!</string>
+    <string name="verification_error_invalid_code">Invalid activation code!</string>
+
+    <!-- Social pages-->
+    <string name="link_twitter">twitter url</string>
+    <string name="link_instagram">instagram url</string>
+    <string name="facebook_username">facebook username</string>
+    <string name="facebook_page_id">facebook page id</string>
+
+    <!-- Web Browser App-->
+    <string name="no_web_browser_app_available">No Web Browser App Available.</string>
+    <!-- Network Not Available Dialog -->
+    <string name="network_not_available_dialog_title">Error</string>
+    <string name="network_not_available_dialog_message">Please check your internet connection and try again.</string>
+    <string name="network_not_available_dialog_positive_button">Close</string>
+
+    <!-- Report Advertisement Dialog -->
+    <string name="report_ad_dialog_title">Warning, report advertisement.</string>
+    <string name="report_ad_dialog_message">If this advertisement contains false or inappropriate information.</string>
+    <string name="report_ad_dialog_positive_button">Report</string>
+    <string name="report_ad_dialog_negative_button">Close</string>
+
+    <!-- Delete Advertisement Dialog -->
+    <string name="delete_ad_dialog_title">Warning: Delete Advertisement</string>
+    <string name="delete_ad_dialog_message">Are you sure you want to delete this advertisement? This action cannot be undone.</string>
+    <string name="delete_ad_dialog_positive_button">Delete</string>
+    <string name="delete_ad_dialog_negative_button">Close</string>
+
+    <!-- Detail Screen -->
+    <string name="text_no_data_found">No results found!</string>
+    <string name="text_retry">Retry</string>
+    <string name="detail_contact_phone_number">Phone number</string>
+    <string name="detail_contact_email">Email</string>
+    <string name="detail_call_seller_text">Call seller</string>
+    <string name="detail_your_advertisement_text">This is your advertisement.</string>
+    <string name="detail_transport_text">Need transport?</string>
+    <string name="detail_all_user_adverts_text">Show all adverts from this user</string>
+    <string name="detail_show_all_images_text">Show all images</string>
+    <string name="detail_animal_location">Location</string>
+    <string name="detail_advert_created_date_time">Created</string>
+    <string name="detail_advert_updated_date_time">Updated</string>
+
+    <!-- Create Ad Screen -->
+    <string name="create_ad_toolbar_text">Create new</string>
+    <string name="create_ad_store_text">Store ad</string>
+    <string name="create_ad_add_images_text">Add images</string>
+    <string name="create_ad_selected_images_limit">Max limit for selected images</string>
+
+    <!-- Edit Ad Screen -->
+    <string name="edit_ad_toolbar_text">Edit</string>
+    <string name="edit_ad_update_text">Update</string>
+    <string name="edit_ad_delete_text">Delete</string>
+    <string name="edit_ad_add_images_text">Add images</string>
+    <string name="edit_ad_current_images_text">Images</string>
+    <string name="edit_ad_weight_text">Weight</string>
+    <string name="edit_ad_description_text">Description</string>
+
+    <!-- Ads For Me Screen -->
+    <string name="ads_for_me_saved_criteria">Saved criteria</string>
+    <string name="ads_for_me_result">Results</string>
+
+    <!-- Saved Criteria Screen -->
+    <string name="saved_criteria_toolbar_text">Saved criteria</string>
+
+    <!-- SavedCriteriaChipSection -->
+    <string name="saved_criteria_section_create_new_text">Add criteria</string>
+
+    <!-- Create Criteria Screen -->
+    <string name="create_criteria_toolbar_text">Create criteria</string>
+    <string name="create_criteria_reset_toolbar_text">Reset</string>
+    <string name="create_criteria_price_range_text">Price range (%s)</string>
+    <string name="create_criteria_save_text">Save</string>
+    <string name="create_criteria_enter_title_text">Enter criteria name</string>
+    <string name="create_criteria_dialog_positive_text">Save</string>
+    <string name="create_criteria_dialog_negative_text">Cancel</string>
+
+    <!-- Search Result Screen -->
+    <string name="search_result_toolbar_text">Result</string>
+
+    <!-- Animal Type Screen -->
+    <string name="animal_type_toolbar_text">Animal Type</string>
+
+    <!-- Shipping Screen -->
+    <string name="shipping_toolbar_text">Shipping</string>
+    <string name="shipping_contact_text">Contact</string>
+    <string name="shipping_transport_option_text">Transporting</string>
+
+    <!-- Animal Age Screen -->
+    <string name="animal_age_toolbar_text">Animal Age</string>
+
+    <!-- Location country Screen -->
+    <string name="country_toolbar_text">Country</string>
+    <string name="state_toolbar_text">State</string>
+    <string name="city_toolbar_text">City</string>
+
+    <!-- Animal Eco Certificate Screen -->
+    <string name="animal_eco_certificate_toolbar_text">Eco Certificate</string>
+
+    <!-- Animal Shipping Screen -->
+    <string name="animal_shipping_toolbar_text">Shipping</string>
+
+    <!-- Location Screen -->
+    <string name="location_toolbar_text">Location</string>
+    <string name="location_country_name">Country</string>
+    <string name="location_state_name">State</string>
+    <string name="location_city_name">City</string>
+    <string name="location_selection_finish">Finish</string>
+
+    <!-- Animal Usefulness Screen -->
+    <string name="animal_Usefulness_toolbar_text">Animal Usefulness</string>
+
+    <!-- Animal Pedigree Screen -->
+    <string name="animal_pedigree_toolbar_text">Animal Pedigree</string>
+
+    <!-- Appearance Screen -->
+    <string name="app_appearance_toolbar_text">App theme</string>
+
+    <!-- Device Ui Theme -->
+    <string name="device_theme_system">System</string>
+    <string name="device_theme_light">Light</string>
+    <string name="device_theme_dark">Dark</string>
+
+    <!-- Offer Type -->
+    <string name="offer_type">Offer type</string>
+    <string name="offer_type_selling">Selling</string>
+    <string name="offer_type_buying">Buying</string>
+
+    <!-- User Type -->
+    <string name="user_type_fresh_farmer">Fresh Farmer</string>
+    <string name="user_type_small_farmer">Small Farmer</string>
+    <string name="user_type_big_farmer">Big Farmer</string>
+    <string name="user_type_tech_savvy_farmer">Tech-Savvy Farmer</string>
+
+    <!-- Sorting Option -->
+    <string name="sorting_sort_by_latest_first">Latest first</string>
+    <string name="sorting_sort_by_oldest_first">Oldest first</string>
+    <string name="sorting_sort_by_price_increasing">Price increasing</string>
+    <string name="sorting_sort_by_price_decreasing">Price decreasing</string>
+
+    <!-- All over the app usage -->
+    <string name="contact_phone_number">Phone:</string>
+    <string name="sorting_sort_by">Sort by</string>
+    <string name="price_upon_agreement">Price upon agreement.</string>
+    <string name="price_plus_tax">Plus Tax.</string>
+    <string name="text_advertising_not_found">Advertising doesn\'t exist anymore.</string>
+    <string name="text_advertising_deleted">Advertising deleted.</string>
+    <string name="text_advertising_updated">Advertising updated.</string>
+    <string name="text_advertising_update_failed">Advertising update failed.</string>
+    <string name="text_advertising_delete_failed">Advertising delete failed.</string>
+    <string name="text_report_advertising_abuse">Advertising reported!</string>
+    <string name="press_back_again_to_exit">Press back again to exit.</string>
+
+    <string name="empty_value" />
+
+    <!-- Internet connection_status -->
+    <string name="connection_status_available">Online</string>
+    <string name="connection_status_unavailable">No internet connection</string>
+    <string name="connection_status_losing">Internet connection interrupted</string>
+    <string name="connection_status_lost">Internet connection lost</string>
+
+    <!-- Location -->
+    <string name="user_location_information">My location</string>
+    <string name="user_location_information_not_selected">Not updated!</string>
+    <string name="location_information">Location information</string>
+    <string name="current_country_location_information">Current country</string>
+    <string name="current_state_location_information">Current state</string>
+    <string name="current_city_location_information">Current city</string>
+    <string name="country_location_not_selected">Country not selected</string>
+    <string name="state_location_not_selected">State not selected</string>
+    <string name="city_location_not_selected">City not selected</string>
+    <string name="location_search_history">Location history</string>
+    <string name="location_select_city">Select city</string>
+
+</resources>

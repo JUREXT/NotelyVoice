@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Animal Age -->
+    <string name="animal_age">Age</string>
+    <string name="animal_age_max_15_days">Max 15 days</string>
+    <string name="animal_age_between_15_and_30_days">15 — 30 days</string>
+    <string name="animal_age_between_1_and_2_months">1 — 2 months</string>
+    <string name="animal_age_between_2_and_4_months">2 — 4 months</string>
+    <string name="animal_age_between_4_and_6_months">4 — 6 months</string>
+    <string name="animal_age_between_6_and_8_months">6 — 8 months</string>
+    <string name="animal_age_between_8_and_10_months">8 — 10 months</string>
+    <string name="animal_age_between_10_and_12_months">10 — 12 months</string>
+    <string name="animal_age_between_12_and_18_months">12 — 18 months</string>
+    <string name="animal_age_between_18_and_24_months">18 — 24 months</string>
+    <string name="animal_age_between_2_and_4_years">2 — 4 years</string>
+    <string name="animal_age_between_4_and_6_years">4 — 6 years</string>
+    <string name="animal_age_over_6_years">Over 6 years</string>
+    <string name="animal_age_not_important">Age is not important</string>
+
+    <!-- Pedigree -->
+    <string name="pedigree">Pedigree</string>
+    <string name="pedigree_available">Pedigree available</string>
+    <string name="pedigree_not_available">Pedigree is not available</string>
+
+    <!-- Animal Type -->
+    <string name="animal_type">Animal type</string>
+    <string name="animal_type_cow">Cow</string>
+    <string name="animal_type_taurus">Taurus</string>
+    <string name="animal_type_heifer">Heifer</string>
+    <string name="animal_type_calf_male">Calf male</string>
+    <string name="animal_type_calf_female">Calf female</string>
+    <string name="animal_type_pregnant_cow">Pregnant cow</string>
+    <string name="animal_type_pregnant_heifer">Pregnant heifer</string>
+    <string name="animal_type_cow_with_calf">Cow with calf</string>
+    <string name="animal_type_not_important">Animal type not important</string>
+
+    <!-- Animal Usefulness -->
+    <string name="animal_usefulness">Animal usefulness</string>
+    <string name="animal_usefulness_meat">Meat</string>
+    <string name="animal_usefulness_milk">Milk</string>
+    <string name="animal_usefulness_milk_meat">Milk and meat</string>
+    <string name="animal_usefulness_tribe">Tribe</string>
+    <string name="animal_usefulness_further_breading">Further breading</string>
+    <string name="animal_usefulness_not_important">Animal usefulness is not important</string>
+
+    <!-- Eco Certificate -->
+    <string name="eco_certificate">Eco certificate</string>
+    <string name="eco_certificate_available">Eco certificate available</string>
+    <string name="eco_certificate_not_available">Eco certificate is not available</string>
+
+    <!-- Shipping -->
+    <string name="shipping">Shipping</string>
+    <string name="shipping_available">Shipping available</string>
+    <string name="shipping_not_available">Shipping is not available</string>
+
+    <!-- Reserved -->
+    <string name="reserved">Reserved</string>
+    <string name="reserved_status_true">Currently reserved</string>
+    <string name="reserved_status_false">Not reserved</string>
+
+    <string name="price_text">Price</string>
+    <string name="price_min_text">Min price</string>
+    <string name="price_max_text">Max price</string>
+
+    <!-- Weight -->
+    <string name="animal_weight">Animal weight</string>
+    <string name="weight_in_kg">Weight %1$d kg</string>
+
+    <!-- Grazing Ready -->
+    <string name="grazing_ready">Grazing ready</string>
+    <string name="grazing_ready_yes">Grazing ready - Yes</string>
+    <string name="grazing_ready_no">Grazing ready - No</string>
+
+</resources>

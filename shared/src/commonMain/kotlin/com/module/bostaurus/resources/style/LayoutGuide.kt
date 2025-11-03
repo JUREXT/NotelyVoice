@@ -3,6 +3,7 @@ package com.module.bostaurus.resources.style
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
+// TODO: Reanme to better in use in composables.
 object LayoutGuide {
 
     // MARK: - Fonts

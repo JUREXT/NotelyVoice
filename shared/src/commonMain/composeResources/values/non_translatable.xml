@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Bostaurus</string>
+    <string name="euro_currency_sign_with_placeholder">%s €</string>
+    <string name="euro_currency_sign">€</string>
+    <string name="unit_kg_sign">Kg</string>
+</resources>

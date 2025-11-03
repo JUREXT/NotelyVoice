@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="country_name_native_slovenia">Slovenija</string>
+    <string name="country_name_slovenia">Slovenia</string>
+
+    <string name="country_name_native_austria">Österreich</string>
+    <string name="country_name_austria">Austria</string>
+</resources>
