@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name">Bostaurus</string>
+    <string name="euro_currency_sign_with_placeholder">%s €</string>
+    <string name="euro_currency_sign">€</string>
+    <string name="unit_kg_sign">Kg</string>
+
     <string name="error">Error</string>
     <string name="close">Close</string>
     <string name="cancel">Cancel</string>
@@ -9,7 +14,7 @@
     <string name="copy">Copy</string>
     <!-- TopBar -->
     <string name="top_bar_back">Back</string>
-    <string name="top_bar_notes">@string/app_name</string>
+    <string name="top_bar_notes">Bostaurus</string>
     <string name="top_bar_menu">Menu</string>
     <string name="top_bar_my_note">My Note</string>
     <string name="top_bar_export_audio_folder">Export Audio to Folder</string>

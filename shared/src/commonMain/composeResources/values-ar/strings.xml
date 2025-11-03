@@ -1,2 +1,7 @@
-<!-- TopBar -->
-<string name="top_bar_back">رجوع</string><string name="top_bar_notes">@string/app_name</string><string name="top_bar_menu">القائمة</string>// ... existing code ...
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- TopBar -->
+    <string name="top_bar_back">رجوع</string>
+    <string name="top_bar_notes">Bostaurus</string>
+    <string name="top_bar_menu">القائمة</string>
+</resources>
