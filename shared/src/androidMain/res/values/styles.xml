@@ -1,13 +1,13 @@
 <resources>
-    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
-        <item name="android:windowLightStatusBar">true</item>
-        <item name="android:statusBarColor">@android:color/white</item>
+    <style name="Theme.Bostaurus" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@color/status_bar_semi_transparent</item>
+        <item name="android:navigationBarColor">@color/navigation_bar_semi_transparent</item>
     </style>
 
-    <style name="Theme.App.Starting" parent="Theme.SplashScreen">
-        <item name="windowSplashScreenBackground">@android:color/black</item>
-        <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher</item>
-        <item name="postSplashScreenTheme">@style/AppTheme</item>
+    <style name="Theme.SplashScreenTheme" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="windowSplashScreenBackground">@color/white</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/splash</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="postSplashScreenTheme">@style/Theme.Bostaurus</item>
     </style>
-
 </resources>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- region Light mode -->
+    <!-- Base Colors Palette from Figma -->
+    <color name="red">#F01515</color>
+    <color name="red_light">#F44440</color>
+    <color name="green">#0BC75B</color>
+    <color name="blue_light">#5EA1DD</color>
+    <color name="white">#FFFFFF</color>
+    <color name="gray_1">#4C4C4C</color>
+    <color name="gray_2">#999999</color>
+    <color name="gray_4">#DDDDDD</color>
+    <color name="gray_5">#A9A9A9</color>
+    <color name="gray_bg">#FCFCFC</color>
+    <color name="gray_lines">#EEEEEE</color>
+    <color name="black">#000000</color>
+    <color name="bright_orange">#FFAC1C</color>
+
+    <!-- Color Palette with modified opacity -->
+    <color name="gray_1_opacity_50">#804C4C4C</color>
+    <color name="gray_bg_opacity_90">#E6FCFCFC</color>
+    <color name="white_opacity_5">#0DFFFFFF</color>
+    <color name="white_opacity_50">#80FFFFFF</color>
+    <color name="white_opacity_85">#D9FFFFFF</color>
+    <color name="black_opacity_5">#0D000000</color>
+    <color name="black_opacity_15">#26000000</color>
+    <color name="black_opacity_20">#33000000</color>
+    <color name="black_opacity_32">#52000000</color>
+    <!-- endregion -->
+
+    <!-- region Dark/Night mode -->
+    <!-- Base Colors Palette from Figma -->
+    <color name="white_night">#2B2D32</color>
+    <color name="gray_1_night">#c3c3c3</color>
+    <color name="gray_4_night">#535457</color>
+    <color name="gray_5_night">#797A7D</color>
+    <color name="gray_bg_night">#24272C</color>
+    <color name="gray_lines_night">#34353A</color>
+    <color name="black_night">#f3f3f3</color>
+
+    <!-- Color Palette with modified opacity -->
+    <color name="gray_1_opacity_50_night">#80c3c3c3</color>
+    <color name="gray_bg_opacity_90_night">#E624272C</color>
+    <color name="white_opacity_5_night">#0D2B2D32</color>
+    <color name="white_opacity_50_night">#802B2D32</color>
+    <color name="white_opacity_85_night">#D92B2D32</color>
+    <color name="black_opacity_5_night">#0Df3f3f3</color>
+    <color name="black_opacity_15_night">#26f3f3f3</color>
+    <color name="black_opacity_32_night">#52f3f3f3</color>
+    <!-- endregion -->
+
+    <!-- System status bar -->
+    <color name="status_bar_white">@color/white</color>
+    <color name="status_bar_gray">@color/gray_bg</color>
+    <color name="status_bar_red">@color/red</color>
+    <color name="status_bar_semi_transparent">@color/black_opacity_32</color>
+
+    <!-- System navigation bar -->
+    <color name="navigation_bar_white">@color/white</color>
+    <color name="navigation_bar_gray">@color/gray_bg</color>
+    <color name="navigation_bar_gray_opacity">@color/gray_bg_opacity_90</color>
+    <color name="navigation_bar_semi_transparent">@color/black_opacity_32</color>
+
+</resources>
